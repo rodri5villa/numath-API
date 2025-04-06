@@ -1,0 +1,31 @@
+@startuml
+
+skinparam state {
+  BackgroundColor #faf4b4
+  BorderColor #c90000
+}
+
+skinparam note {
+  BackgroundColor #f5f5f5
+}
+
+skinparam linetype polyline
+
+title Detalle Caso de Uso Resultado Müller
+
+RESULTADO_MÜLLER-[#green]-> :libreria
+note on link
+  **Aplicación solicita:**
+  - Importar método müller
+end note
+
+:libreria -[#green]-> :abrir_resultado_müller
+note on link
+  **Librería realiza:**
+  - Calcular operación de müller
+  - Devolver resultado
+end note
+
+:abrir_resultado_müller -[#green]-> MÜLLER
+
+@enduml

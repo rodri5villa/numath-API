@@ -1,0 +1,47 @@
+@startuml
+
+skinparam state {
+  BackgroundColor #faf4b4
+  BorderColor #c90000
+}
+
+skinparam note {
+  BackgroundColor #f5f5f5
+}
+
+skinparam linetype polyline
+
+title Detalle Caso de Uso Abrir Método Falsa Posición
+
+
+ECUACIONES_UNA_VARIABLE -[#green]-> abrir_falsa_posicion
+note on link
+  **Usuario solicita:**
+  - Abrir Método Falsa Posición
+end note
+
+state abrir_falsa_posicion{
+  state 1 as " "
+  state 2 as " "
+  state 3 as " "
+  
+  [*] -[#green]-> 1
+  1 -[#green]-> 2
+  note on link
+      **Sistema requiere:**
+      - Método falsa posición conocido
+  end note
+  2 -[#green]-> 3
+  note on link
+    **Usuario Selecciona:**
+    - Método falsa posición conocido
+  end note
+ 
+  3 -[#green]-> [*]
+}
+
+abrir_falsa_posicion-[#green]-> :abrirFalsaPosicion
+
+:abrirFalsaPosicion -[#green]-> FALSA_POSICION
+
+@enduml

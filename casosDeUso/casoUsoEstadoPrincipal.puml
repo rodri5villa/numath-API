@@ -1,0 +1,15 @@
+@startuml
+
+title Caso de Uso Estado Principal
+
+left to right direction
+
+actor Usuario as user
+
+rectangle  {
+    usecase "Listar Módulos" as listarMod
+}
+
+user --> listarMod: ""
+
+@enduml

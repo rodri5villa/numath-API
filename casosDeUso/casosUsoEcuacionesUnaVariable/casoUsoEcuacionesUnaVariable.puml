@@ -1,0 +1,31 @@
+@startuml
+
+title Caso de Uso Ecuaciones de Una Variable
+
+left to right direction
+
+actor Usuario as user
+
+rectangle  {
+    usecase "Listar Operaciones" as listarOper
+    usecase "Abrir Método Bisección" as bisection
+    usecase "Abrir Método Punto Fijo" as fixedPoint
+    usecase "Abrir Método Newton" as newton
+    usecase "Abrir Método Secante" as secant
+    usecase "Abrir Método Falsa Posición" as falsePosition
+    usecase "Abrir Método Steffensen" as steffensen
+    usecase "Abrir Método Horner" as horner
+    usecase "Abrir Método Müller" as müller
+}
+
+user --> listarOper: ""
+user --> bisection: ""
+user --> fixedPoint: ""
+user --> newton: ""
+user --> secant: ""
+user --> falsePosition: ""
+user --> steffensen: ""
+user --> horner: ""
+user --> müller: ""
+
+@enduml

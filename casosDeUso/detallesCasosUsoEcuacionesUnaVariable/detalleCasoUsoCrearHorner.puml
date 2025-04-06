@@ -1,0 +1,52 @@
+@startuml
+
+skinparam state {
+  BackgroundColor #faf4b4
+  BorderColor #c90000
+}
+
+skinparam note {
+  BackgroundColor #f5f5f5
+}
+
+skinparam linetype polyline
+
+title Detalle Caso de Uso Crear Operación Horner
+
+
+HORNER -[#green]-> crear_horner
+note on link
+  **Usuario solicita:**
+  - Crear operación horner
+end note
+
+state crear_horner {
+  state 1 as " "
+  state 2 as " "
+  state 3 as " "
+  
+  [*] -[#green]-> 1
+  1 -[#green]-> 2
+  note on link
+      **Sistema requiere Parámetros:**
+      - a
+      - x0
+  end note
+  2 -[#green]-> 3
+  note on link
+    **Usuario Proporciona Parámetros:**
+      - a
+      - x0
+  end note
+  3 -[#red]-> 1
+  note on link
+    [Parámetros Inválidos]
+  end note
+  3 -[#green]-> [*]
+}
+
+crear_horner -[#green]-> :abrirResultadoHorner
+
+:abrirResultadoHorner -[#green]-> RESULTADO_HORNER
+
+@enduml

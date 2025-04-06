@@ -1,0 +1,19 @@
+@startuml
+
+title Caso de Uso Resultado Bisección
+
+left to right direction
+
+actor Aplicación as aplication
+actor Librería as library
+
+rectangle  {
+    usecase "Importar Operación Bisección de Librería" as importar
+    usecase "Calcular y Devolver Resultado" as calcular
+
+}
+
+aplication --> importar: ""
+library --> calcular: ""
+
+@enduml

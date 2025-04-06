@@ -1,0 +1,19 @@
+@startuml
+
+title Caso de Uso Resultado Müller
+
+left to right direction
+
+actor Aplicación as aplication
+actor Librería as library
+
+rectangle  {
+    usecase "Importar Operación Müller de Librería" as importar
+    usecase "Calcular y Devolver Resultado" as calcular
+
+}
+
+aplication --> importar: ""
+library --> calcular: ""
+
+@enduml

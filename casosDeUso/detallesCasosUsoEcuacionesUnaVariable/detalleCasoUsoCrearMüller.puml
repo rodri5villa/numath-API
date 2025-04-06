@@ -1,0 +1,60 @@
+@startuml
+
+skinparam state {
+  BackgroundColor #faf4b4
+  BorderColor #c90000
+}
+
+skinparam note {
+  BackgroundColor #f5f5f5
+}
+
+skinparam linetype polyline
+
+title Detalle Caso de Uso Crear Operación Müller
+
+
+MÜLLER -[#green]-> crear_müller
+note on link
+  **Usuario solicita:**
+  - Crear operación müller
+end note
+
+state crear_müller {
+  state 1 as " "
+  state 2 as " "
+  state 3 as " "
+  
+  [*] -[#green]-> 1
+  1 -[#green]-> 2
+  note on link
+      **Sistema requiere Parámetros:**
+      - funcion
+      - p0
+      - p1
+      - p2
+      - TOL
+      - N0
+  end note
+  2 -[#green]-> 3
+  note on link
+    **Usuario Proporciona Parámetros:**
+      - funcion
+      - p0
+      - p1
+      - p2
+      - TOL
+      - N0
+  end note
+  3 -[#red]-> 1
+  note on link
+    [Parámetros Inválidos]
+  end note
+  3 -[#green]-> [*]
+}
+
+crear_müller -[#green]-> :abrirResultadoMüller
+
+:abrirResultadoMüller -[#green]-> RESULTADO_MÜLLER
+
+@enduml

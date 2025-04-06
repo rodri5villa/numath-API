@@ -1,0 +1,31 @@
+@startuml
+
+skinparam state {
+  BackgroundColor #faf4b4
+  BorderColor #c90000
+}
+
+skinparam note {
+  BackgroundColor #f5f5f5
+}
+
+skinparam linetype polyline
+
+title Detalle Caso de Uso Listar Módulos
+
+
+INICIO-[#green]-> :listar_modulos
+note on link
+  **Sisteme requiere:**
+  - Listar Módulos
+end note
+
+ECUACIONES_UNA_VARIABLE-[#green]-> :listar_modulos
+note on link
+  **Sisteme requiere:**
+  - Listar Módulos
+end note
+
+:listar_modulos-[#green]-> ESTADO_PRINCIPAL
+
+@enduml

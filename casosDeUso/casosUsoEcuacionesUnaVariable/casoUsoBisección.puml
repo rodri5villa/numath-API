@@ -1,0 +1,15 @@
+@startuml
+
+title Caso de Uso Bisección
+
+left to right direction
+
+actor Usuario as user
+
+rectangle  {
+    usecase "Crear Operación" as crear
+}
+
+user --> crear: ""
+
+@enduml

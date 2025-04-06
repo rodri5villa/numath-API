@@ -1,0 +1,31 @@
+@startuml
+
+skinparam state {
+  BackgroundColor #faf4b4
+  BorderColor #c90000
+}
+
+skinparam note {
+  BackgroundColor #f5f5f5
+}
+
+skinparam linetype polyline
+
+title Detalle Caso de Uso Resultado Newton
+
+RESULTADO_NEWTON-[#green]-> :libreria
+note on link
+  **Aplicación solicita:**
+  - Importar método newton
+end note
+
+:libreria -[#green]-> :abrir_resultado_newton
+note on link
+  **Librería realiza:**
+  - Calcular operación de newton
+  - Devolver resultado
+end note
+
+:abrir_resultado_newton -[#green]-> NEWTON
+
+@enduml

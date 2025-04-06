@@ -1,0 +1,205 @@
+@startuml
+skinparam noteBackgroundColor #f5f5f5
+skinparam noteBorderColor #c90000
+skinparam arrowColor #218c00
+skinparam stateBackgroundColor #faf4b4
+skinparam stateBorderColor #c90000
+skinparam linetype polyline
+skinparam arrowThickness 1
+
+title Diagrama de Contexto Módulo Ecuaciones de una variable
+
+[*] --> WEB
+note on link
+  Abrir WEB  
+end note
+
+State WEB {
+[*] --> ESTADO_PRINCIPAL
+note on link
+  Listar Módulos  
+end note
+
+ESTADO_PRINCIPAL -R-> OTROS_MODULOS
+note on link
+  Listar Operaciones  
+end note
+
+ESTADO_PRINCIPAL --> ECUACIONES_UNA_VARIABLE
+note on link
+  Listar Operaciones  
+end note
+
+ECUACIONES_UNA_VARIABLE-d-> ESTADO_PRINCIPAL
+note on link
+  Listar Módulos
+end note
+
+ECUACIONES_UNA_VARIABLE-d-> BISECCION
+note on link
+  Abrir Bisección  
+end note 
+
+BISECCION -d-> ECUACIONES_UNA_VARIABLE
+note on link
+  Listar Operaciones
+end note
+
+BISECCION-D-> RESULTADO_BISECCION
+note on link
+  Crear Operación Bisección 
+end note 
+
+RESULTADO_BISECCION --> BISECCION
+note on link
+  Devolver Resultado
+end note
+
+ECUACIONES_UNA_VARIABLE-d-> PUNTO_FIJO
+note on link
+  Abrir Iteración Punto Fijo
+end note 
+
+PUNTO_FIJO-d-> ECUACIONES_UNA_VARIABLE
+note on link
+  Listar Operaciones
+end note
+
+PUNTO_FIJO-D-> RESULTADO_PUNTO_FIJO
+note on link
+  Crear Operación Punto Fijo
+end note 
+
+RESULTADO_PUNTO_FIJO --> PUNTO_FIJO
+note on link
+  Devolver Resultado
+end note
+
+ECUACIONES_UNA_VARIABLE-d-> NEWTON
+note on link
+  Abrir Método Newton
+end note 
+
+NEWTON-d-> ECUACIONES_UNA_VARIABLE
+note on link
+  Listar Operaciones
+end note
+
+NEWTON-D-> RESULTADO_NEWTON
+note on link
+  Crear Operación Newton
+end note 
+
+RESULTADO_NEWTON --> NEWTON
+note on link
+  Devolver Resultado
+end note
+
+ECUACIONES_UNA_VARIABLE-d-> SECANTE
+note on link
+  Abrir Método Secante
+end note 
+
+SECANTE-d-> ECUACIONES_UNA_VARIABLE
+note on link
+  Listar Operaciones
+end note
+
+SECANTE-D-> RESULTADO_SECANTE
+note on link
+  Crear Operación Secante
+end note 
+
+RESULTADO_SECANTE --> SECANTE
+note on link
+  Devolver Resultado
+end note
+
+ECUACIONES_UNA_VARIABLE-d-> FALSA_POSICION
+note on link
+  Abrir Método Falsa Posición
+end note 
+
+FALSA_POSICION-d-> ECUACIONES_UNA_VARIABLE
+note on link
+  Listar Operaciones
+end note
+
+FALSA_POSICION-D-> RESULTADO_FALSA_POSICION
+note on link
+  Crear Operación Falsa Posición
+end note 
+
+RESULTADO_FALSA_POSICION --> FALSA_POSICION
+note on link
+  Devolver Resultado
+end note
+
+ECUACIONES_UNA_VARIABLE-d-> STEFFENSEN
+note on link
+  Abrir Método Steffensen
+end note 
+
+STEFFENSEN-d-> ECUACIONES_UNA_VARIABLE
+note on link
+  Listar Operaciones
+end note
+
+STEFFENSEN-D-> RESULTADO_STEFFENSEN
+note on link
+  Crear Operación Steffensen
+end note 
+
+RESULTADO_STEFFENSEN --> STEFFENSEN
+note on link
+  Devolver Resultado
+end note
+
+ECUACIONES_UNA_VARIABLE-d-> HORNER
+note on link
+  Abrir Método Horner
+end note 
+
+HORNER-d-> ECUACIONES_UNA_VARIABLE
+note on link
+  Listar Operaciones
+end note
+
+HORNER-D-> RESULTADO_HORNER
+note on link
+  Crear Operación Horner
+end note 
+
+RESULTADO_HORNER --> HORNER
+note on link
+  Devolver Resultado
+end note
+
+
+ECUACIONES_UNA_VARIABLE-d-> MÜLLER
+note on link
+  Abrir Método Müller
+end note 
+
+MÜLLER-d-> ECUACIONES_UNA_VARIABLE
+note on link
+  Listar Operaciones
+end note
+
+MÜLLER-D-> RESULTADO_MÜLLER
+note on link
+  Crear Operación Müller
+end note 
+
+RESULTADO_MÜLLER --> MÜLLER
+note on link
+  Devolver Resultado
+end note
+}
+
+WEB --> [*]
+note on link
+  Cerrar WEB
+end note
+
+@enduml
