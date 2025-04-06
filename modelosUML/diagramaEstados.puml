@@ -1,0 +1,12 @@
+@startuml
+
+title Diagrama de Estados 
+
+[*] --> EligiendoOperacion : Abrir Web
+EligiendoOperacion --> EscribiendoParámetros : Indica
+EscribiendoParámetros --> Resultado : Obtiene
+Resultado --> EscribiendoParámetros : Nuevos parámetros
+Resultado --> EligiendoOperacion : Nueva operación
+Resultado --> [*] : Cerrar Web
+
+@enduml

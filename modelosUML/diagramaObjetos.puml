@@ -1,0 +1,37 @@
+@startuml
+
+title Diagrama de Objetos de la Operación Bisección
+
+package "API" {
+  object "flask_app : API_1" as flask_app {
+    create_app() : Flask
+  }
+  
+  object "operaciones : bisección" as operaciones {
+    bisection_endpoint("x^2 - 4", 0, 3, 1e-5, 100)
+  }
+}
+
+package "Librería: numath-Libary"{
+  package "numath" {
+
+  object "ecuaciones_una_variable : bisección" as ecuaciones_una_variable {
+    bisection_method("x^2 - 4", 0, 3, 1e-5, 100)
+  }
+
+  object "transformacion : transformation" as transformacion {
+    funcion_entrada = "x^2 - 4"
+    crear_funcion() = x**2 - 4
+  }
+  
+}
+}
+
+flask_app -- operaciones: "Registra una llamada de operacion bisección >"
+operaciones -- ecuaciones_una_variable : "LLama a método bisección de la librería >"
+ecuaciones_una_variable-- transformacion : "Transforma la entrada de la función en una función callable >"
+transformacion -- ecuaciones_una_variable : "Función transformada >"
+ecuaciones_una_variable -- operaciones : "Retorna resultado >"
+operaciones -- flask_app : "Envía Respuesta >"
+
+@enduml

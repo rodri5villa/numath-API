@@ -1,0 +1,75 @@
+@startuml
+
+title Diagrama de Clases Librería Numath + API
+
+' Módulo __init__.py que contiene la función create_app()
+
+package "API" {
+  class __init__ {
+    +create_app() : Flask
+  }
+  
+  ' Módulo operaciones.py donde se define el blueprint y los endpoints
+  class operaciones {
+    +bisection_endpoint()
+    +fixed_point_endpoint()
+    +newton_endpoint()
+    +secant_endpoint()
+    +false_position_endpoint()
+    +steffensen_endpoint()
+    +horner_method()
+    +muller_endpoint()
+  }
+}
+
+' Librería instalada vía pip: numath
+package "Librería: numath-Libary"{
+  package "numath" {
+  
+  ' init.py: Inicializa la librería
+  class init {
+  }
+
+  ' ecuaciones_una_variable.py: Contiene las funciones para cada método
+  class ecuaciones_una_variable{
+    + bisection(funcion, a, b, TOL, N0)
+    + fixed_point_iteration(funcion, p0, TOL, N0)
+    + newton_method(funcion, p0, TOL, N0, factor)
+    + secant_method(funcion, p0, p1, TOL, N0)
+    + false_position(funcion, p0, p1, TOL, N0) 
+    + steffensen_method(funcion, p0, TOL, N0) 
+    + horner_method(a, x0)
+    + muller_method(funcion, p0, p1, p2, TOL, N0)
+  }
+
+  ' transformacion.py: Se encarga de transformar la cadena de la función a callable
+  class transformacion {
+    + reemplazar_funciones(funcion_entrada) : str
+    + crear_funcion(funcion_entrada) : callable
+  }
+  ' setup.py se encuentra fuera de la carpeta numath
+  
+}
+  class setup {
+    + parse_requirements(filename)
+    + setup()
+    ' Configura la instalación/paquete (setuptools.setup(...))
+  }
+
+}
+' Relaciones
+
+' Relacionamos los ficheros de la carpeta numath
+init --> ecuaciones_una_variable : "Inicializa la librería"
+ecuaciones_una_variable--> transformacion : "Transforma la entrada de la función en una función callable"
+
+' setup.py se encarga de empaquetar la librería numath
+setup --> "numath" : "Empaqueta la librería"
+
+' La función create_app() crea una instancia de Flask y registra el blueprint definido en operaciones.py
+__init__ --> operaciones: "Registra una solicitud POST"
+
+' Los endpoints definidos en operaciones.py utilizan la librería numath para realizar los cálculos
+operaciones --> ecuaciones_una_variable : "LLama a métodos de la librería"
+
+@enduml
