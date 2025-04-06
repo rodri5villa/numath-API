@@ -327,4 +327,4 @@ Muestra como la Aplicación y la Librería retornan el resultado de la operació
 
 |                                                    |                                                    |
 | -------------------------------------------------- | -------------------------------------------------- |
-| ![](../imágenes/casosUso/casosUsoEcuacionesUnaVariable/diagramaContextoEcuacionesUnaVariable.svg) | [Código PUML](../casosDeUso/casosUsoEcuacionesUnaVariable/diagramaContextoEcuacionesUnaVariable.puml) |
+| ![](../imágenes/casosUso/casosUsoEcuacionesUnaVariable/diagramaContexto.svg) | [Código PUML](../casosDeUso/casosUsoEcuacionesUnaVariable/diagramaContexto.puml) |
