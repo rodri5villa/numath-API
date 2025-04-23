@@ -1,0 +1,47 @@
+@startuml
+
+title Caso de Uso Diferenciación Numérica e Integración
+
+left to right direction
+
+actor Usuario as user
+
+rectangle  {
+    usecase "Listar Operaciones" as listarOper
+    usecase "Abrir Punto Medio de 3 Puntos" as pm3
+    usecase "Abrir Extremo de 3 Puntos" as ex3
+    usecase "Abrir Punto Medio de 5 Puntos" as pm5
+    usecase "Abrir Extremo de 5 Puntos" as ex5
+    usecase "Abrir Punto Medio 2º Derivada" as pm2
+    usecase "Abrir Newton Cotes Cerrado n=1" as ncc1
+    usecase "Abrir Newton Cotes Cerrado n=2" as ncc2
+    usecase "Abrir Newton Cotes Cerrado n=3" as ncc3
+    usecase "Abrir Newton Cotes Cerrado n=4" as ncc4
+    usecase "Abrir Newton Cotes Abierto n=0" as nca0
+    usecase "Abrir Newton Cotes Abierto n=1" as nca1
+    usecase "Abrir Newton Cotes Abierto n=2" as nca2
+    usecase "Abrir Newton Cotes Abierto n=3" as nca3
+    usecase "Abrir Regla Simpson Compuesta" as simpson
+    usecase "Abrir Regla Trapezoidal Compuesta" as trapezoidal
+    usecase "Abrir Regla Punto Medio Compuesta" as pmc
+}
+
+user --> listarOper: ""
+user --> pm3: ""
+user --> ex3: ""
+user --> pm5: ""
+user --> ex5: ""
+user --> pm2: ""
+user --> ncc1: ""
+user --> ncc2: ""
+user --> ncc3: ""
+user --> ncc4: ""
+user --> nca0: ""
+user --> nca1: ""
+user --> nca2: ""
+user --> nca3: ""
+user --> simpson: ""
+user --> trapezoidal: ""
+user --> pmc: ""
+
+@enduml

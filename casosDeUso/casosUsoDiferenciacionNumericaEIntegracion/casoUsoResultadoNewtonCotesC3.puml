@@ -1,0 +1,19 @@
+@startuml
+
+title Caso de Uso Resultado Newton Cotes Cerrado n=3
+
+left to right direction
+
+actor Aplicación as aplication
+actor Librería as library
+
+rectangle  {
+    usecase "Importar Operación Newton Cotes Cerrado n=3 de Librería" as importar
+    usecase "Calcular y Devolver Resultado" as calcular
+
+}
+
+aplication --> importar: ""
+library --> calcular: ""
+
+@enduml

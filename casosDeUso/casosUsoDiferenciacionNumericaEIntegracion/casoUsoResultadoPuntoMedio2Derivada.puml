@@ -1,0 +1,19 @@
+@startuml
+
+title Caso de Uso Resultado Punto Medio 2º Derivada
+
+left to right direction
+
+actor Aplicación as aplication
+actor Librería as library
+
+rectangle  {
+    usecase "Importar Operación Punto Medio de 2º Derivada de Librería" as importar
+    usecase "Calcular y Devolver Resultado" as calcular
+
+}
+
+aplication --> importar: ""
+library --> calcular: ""
+
+@enduml

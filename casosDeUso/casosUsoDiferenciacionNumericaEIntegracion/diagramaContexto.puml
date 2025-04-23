@@ -1,0 +1,363 @@
+@startuml
+skinparam noteBackgroundColor #f5f5f5
+skinparam noteBorderColor #c90000
+skinparam arrowColor #218c00
+skinparam stateBackgroundColor #faf4b4
+skinparam stateBorderColor #c90000
+skinparam linetype polyline
+skinparam arrowThickness 1
+
+title Diagrama de Contexto Módulo Diferenciación Numérica e Integración
+[*] --> WEB
+note on link
+  Abrir WEB  
+end note
+
+State WEB {
+[*] --> ESTADO_PRINCIPAL
+note on link
+  Listar Módulos  
+end note
+
+ESTADO_PRINCIPAL -R-> OTROS_MODULOS
+note on link
+  Listar Operaciones  
+end note
+
+ESTADO_PRINCIPAL --> DIFERENCIACION_NUMERICA_E_INTEGRACION
+note on link
+  Listar Operaciones  
+end note
+
+DIFERENCIACION_NUMERICA_E_INTEGRACION-d-> ESTADO_PRINCIPAL
+note on link
+  Listar Módulos
+end note
+
+DIFERENCIACION_NUMERICA_E_INTEGRACION-d-> PUNTO_MEDIO_3_PUNTOS
+note on link
+  Abrir Punto Medio 
+end note 
+
+PUNTO_MEDIO_3_PUNTOS -d-> DIFERENCIACION_NUMERICA_E_INTEGRACION
+note on link
+  Listar Operaciones
+end note
+
+PUNTO_MEDIO_3_PUNTOS -D-> RESULTADO_PUNTO_MEDIO_3_PUNTOS
+note on link
+  Crear Operación Punto medio 
+end note 
+
+RESULTADO_PUNTO_MEDIO_3_PUNTOS --> PUNTO_MEDIO_3_PUNTOS
+note on link
+  Devolver Resultado
+end note
+
+DIFERENCIACION_NUMERICA_E_INTEGRACION-d-> EXTREMO_3_PUNTOS
+note on link
+  Abrir Extremo 
+end note 
+
+EXTREMO_3_PUNTOS -d-> DIFERENCIACION_NUMERICA_E_INTEGRACION
+note on link
+  Listar Operaciones
+end note
+
+EXTREMO_3_PUNTOS -D-> RESULTADO_EXTREMO_3_PUNTOS
+note on link
+  Crear Operación Extremo 
+end note 
+
+RESULTADO_EXTREMO_3_PUNTOS --> EXTREMO_3_PUNTOS
+note on link
+  Devolver Resultado
+end note
+
+DIFERENCIACION_NUMERICA_E_INTEGRACION-d-> PUNTO_MEDIO_5_PUNTOS
+note on link
+  Abrir Punto Medio
+end note 
+
+PUNTO_MEDIO_5_PUNTOS -d-> DIFERENCIACION_NUMERICA_E_INTEGRACION
+note on link
+  Listar Operaciones
+end note
+
+PUNTO_MEDIO_5_PUNTOS -D-> RESULTADO_PUNTO_MEDIO_5_PUNTOS
+note on link
+  Crear Operación Punto Medio
+end note 
+
+RESULTADO_PUNTO_MEDIO_5_PUNTOS --> PUNTO_MEDIO_5_PUNTOS
+note on link
+  Devolver Resultado
+end note
+
+DIFERENCIACION_NUMERICA_E_INTEGRACION-d-> EXTREMO_5_PUNTOS
+note on link
+  Abrir Extremo
+end note 
+
+EXTREMO_5_PUNTOS -d-> DIFERENCIACION_NUMERICA_E_INTEGRACION
+note on link
+  Listar Operaciones
+end note
+
+EXTREMO_5_PUNTOS -d-> RESULTADO_EXTREMO_5_PUNTOS
+note on link
+  Crear Operación Extremo
+end note 
+
+RESULTADO_EXTREMO_5_PUNTOS --> EXTREMO_5_PUNTOS
+note on link
+  Devolver Resultado
+end note
+
+DIFERENCIACION_NUMERICA_E_INTEGRACION-d-> PUNTO_MEDIO_2_DERIVADA
+note on link
+  Abrir Punto Medio
+end note 
+
+PUNTO_MEDIO_2_DERIVADA -d-> DIFERENCIACION_NUMERICA_E_INTEGRACION
+note on link
+  Listar Operaciones
+end note
+
+PUNTO_MEDIO_2_DERIVADA-D-> RESULTADO_PUNTO_MEDIO_2_DERIVADA
+note on link
+  Crear Operación Punto Medio
+end note 
+
+RESULTADO_PUNTO_MEDIO_2_DERIVADA --> PUNTO_MEDIO_2_DERIVADA
+note on link
+  Devolver Resultado
+end note
+
+DIFERENCIACION_NUMERICA_E_INTEGRACION-d-> NEWTON_COTES_C1
+note on link
+  Abrir Newton Cotes Cerrado n=1
+end note 
+
+NEWTON_COTES_C1-d-> DIFERENCIACION_NUMERICA_E_INTEGRACION
+note on link
+  Listar Operaciones
+end note
+
+NEWTON_COTES_C1-D-> RESULTADO_NEWTON_COTES_C1
+note on link
+  Crear Operación n=1
+end note 
+
+RESULTADO_NEWTON_COTES_C1 --> NEWTON_COTES_C1
+note on link
+  Devolver Resultado
+end note
+
+DIFERENCIACION_NUMERICA_E_INTEGRACION-d-> NEWTON_COTES_C2
+note on link
+  Abrir Newton Cotes Cerrado n=2
+end note 
+
+NEWTON_COTES_C2-d-> DIFERENCIACION_NUMERICA_E_INTEGRACION
+note on link
+  Listar Operaciones
+end note
+
+NEWTON_COTES_C2-D-> RESULTADO_NEWTON_COTES_C2
+note on link
+  Crear Operación n=2
+end note 
+
+RESULTADO_NEWTON_COTES_C2 --> NEWTON_COTES_C2
+note on link
+  Devolver Resultado
+end note
+
+DIFERENCIACION_NUMERICA_E_INTEGRACION-d-> NEWTON_COTES_C3
+note on link
+  Abrir Newton Cotes Cerrado n=3
+end note 
+
+NEWTON_COTES_C3-d-> DIFERENCIACION_NUMERICA_E_INTEGRACION
+note on link
+  Listar Operaciones
+end note
+
+NEWTON_COTES_C3-D-> RESULTADO_NEWTON_COTES_C3
+note on link
+  Crear Operación n=3
+end note 
+
+RESULTADO_NEWTON_COTES_C3 --> NEWTON_COTES_C3
+note on link
+  Devolver Resultado
+end note
+
+DIFERENCIACION_NUMERICA_E_INTEGRACION-d-> NEWTON_COTES_C4
+note on link
+  Abrir Newton Cotes Cerrado n=4
+end note 
+
+NEWTON_COTES_C4-d-> DIFERENCIACION_NUMERICA_E_INTEGRACION
+note on link
+  Listar Operaciones
+end note
+
+NEWTON_COTES_C4-D-> RESULTADO_NEWTON_COTES_C4
+note on link
+  Crear Operación n=4
+end note 
+
+RESULTADO_NEWTON_COTES_C4 --> NEWTON_COTES_C4
+note on link
+  Devolver Resultado
+end note
+
+DIFERENCIACION_NUMERICA_E_INTEGRACION-d-> NEWTON_COTES_A0
+note on link
+  Abrir Newton Cotes Abierto n=0
+end note 
+
+NEWTON_COTES_A0 -d-> DIFERENCIACION_NUMERICA_E_INTEGRACION
+note on link
+  Listar Operaciones
+end note
+
+NEWTON_COTES_A0-D-> RESULTADO_NEWTON_COTES_A0
+note on link
+  Crear Operación n=0
+end note 
+
+RESULTADO_NEWTON_COTES_A0 --> NEWTON_COTES_A0
+note on link
+  Devolver Resultado
+end note
+
+DIFERENCIACION_NUMERICA_E_INTEGRACION-d-> NEWTON_COTES_A1
+note on link
+  Abrir Newton Cotes Abierto n=1
+end note 
+
+NEWTON_COTES_A1-d-> DIFERENCIACION_NUMERICA_E_INTEGRACION
+note on link
+  Listar Operaciones
+end note
+
+NEWTON_COTES_A1-D-> RESULTADO_NEWTON_COTES_A1
+note on link
+  Crear Operación n=1
+end note 
+
+RESULTADO_NEWTON_COTES_A1 --> NEWTON_COTES_A1
+note on link
+  Devolver Resultado
+end note
+
+DIFERENCIACION_NUMERICA_E_INTEGRACION-d-> NEWTON_COTES_A2
+note on link
+  Abrir Newton Cotes Abierto n=2
+end note 
+
+NEWTON_COTES_A2-d-> DIFERENCIACION_NUMERICA_E_INTEGRACION
+note on link
+  Listar Operaciones
+end note
+
+NEWTON_COTES_A2-D-> RESULTADO_NEWTON_COTES_A2
+note on link
+  Crear Operación n=2
+end note 
+
+RESULTADO_NEWTON_COTES_A2 --> NEWTON_COTES_A2
+note on link
+  Devolver Resultado
+end note
+
+DIFERENCIACION_NUMERICA_E_INTEGRACION-d-> NEWTON_COTES_A3
+note on link
+  Abrir Newton Cotes Abierto n=3
+end note 
+
+NEWTON_COTES_A3-d-> DIFERENCIACION_NUMERICA_E_INTEGRACION
+note on link
+  Listar Operaciones
+end note
+
+NEWTON_COTES_A3-D-> RESULTADO_NEWTON_COTES_A3
+note on link
+  Crear Operación n=3
+end note 
+
+RESULTADO_NEWTON_COTES_A3 --> NEWTON_COTES_A3
+note on link
+  Devolver Resultado
+end note
+
+DIFERENCIACION_NUMERICA_E_INTEGRACION-d-> SIMPSON_COMPUESTA
+note on link
+  Abrir Regla Simpson Compuesta
+end note 
+
+SIMPSON_COMPUESTA-d-> DIFERENCIACION_NUMERICA_E_INTEGRACION
+note on link
+  Listar Operaciones
+end note
+
+SIMPSON_COMPUESTA-D-> RESULTADO_SIMPSON_COMPUESTA
+note on link
+  Crear Operación Simpson Compuesta
+end note 
+
+RESULTADO_SIMPSON_COMPUESTA --> SIMPSON_COMPUESTA
+note on link
+  Devolver Resultado
+end note
+
+DIFERENCIACION_NUMERICA_E_INTEGRACION-d-> TRAPEZOIDAL_COMPUESTA
+note on link
+  Abrir Tegla Trapezoidal Compuesta
+end note 
+
+TRAPEZOIDAL_COMPUESTA-d-> DIFERENCIACION_NUMERICA_E_INTEGRACION
+note on link
+  Listar Operaciones
+end note
+
+TRAPEZOIDAL_COMPUESTA-D-> RESULTADO_TRAPEZOIDAL_COMPUESTA
+note on link
+  Crear Operación Trapezoidal Compuesta
+end note 
+
+RESULTADO_TRAPEZOIDAL_COMPUESTA --> TRAPEZOIDAL_COMPUESTA
+note on link
+  Devolver Resultado
+end note
+
+DIFERENCIACION_NUMERICA_E_INTEGRACION-d-> PUNTO_MEDIO_COMPUESTA
+note on link
+  Abrir Regla Punto Medio Compuesta
+end note 
+
+PUNTO_MEDIO_COMPUESTA-d-> DIFERENCIACION_NUMERICA_E_INTEGRACION
+note on link
+  Listar Operaciones
+end note
+
+PUNTO_MEDIO_COMPUESTA-D-> RESULTADO_PUNTO_MEDIO_COMPUESTA
+note on link
+  Crear Operación Punto Medio Compuesta
+end note 
+
+RESULTADO_PUNTO_MEDIO_COMPUESTA --> PUNTO_MEDIO_COMPUESTA
+note on link
+  Devolver Resultado
+end note
+}
+
+WEB --> [*]
+note on link
+  Cerrar WEB
+end note
+
+@enduml

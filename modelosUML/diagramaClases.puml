@@ -10,7 +10,7 @@ package "API" {
   }
   
   ' Módulo operaciones.py donde se define el blueprint y los endpoints
-  class operaciones {
+  class ecuaciones_una_variable_B {
     +bisection_endpoint()
     +fixed_point_endpoint()
     +newton_endpoint()
@@ -20,6 +20,29 @@ package "API" {
     +horner_method()
     +muller_endpoint()
   }
+
+  ' Módulo operaciones.py donde se define el blueprint y los endpoints
+  class diferenciacion_numerica_e_integracion_B{
+    + derivative_three_points_central_endpoint()
+    + derivative_three_points_border_endpoint()
+    + derivative_five_points_central_endpoint()
+    + derivative_five_points_border_endpoint()
+    + derivative_unified_endpoint()
+    + second_derivative_central_endpoint()
+    + second_derivative_central_data_endpoint()
+    + trapezoidal_rule_endpoint()
+    + simpson_rule_endpoint()
+    + simpson_38_rule_endpoint()
+    + n4_close_rule_endpoint()
+    + midpoint_rule_endpoint()
+    + n1_open_rule_endpoint()
+    + n2_open_rule_endpoint()
+    + n3_open_rule_endpoint()
+    + composite_simpson_rule_endpoint()
+    + composite_trapezoidal_rule_endpoint()
+    + composite_midpoint_rule_endpoint()
+  }
+
 }
 
 ' Librería instalada vía pip: numath
@@ -41,6 +64,29 @@ package "Librería: numath-Libary"{
     + horner_method(a, x0)
     + muller_method(funcion, p0, p1, p2, TOL, N0)
   }
+ 
+   ' diferenciacion_numerica_e_integracion.py: Contiene las funciones para cada método
+  class diferenciacion_numerica_e_integracion{
+    + derivative_three_points_central(funcion, x0, h)
+    + derivative_three_points_border(funcion, x0, h)
+    + derivative_five_points_central(funcion, x0, h)
+    + derivative_five_points_border(funcion, x0, h)
+    + derivative_unified(datos, x0)
+    + second_derivative_central(funcion, x0, h)
+    + second_derivative_central_data(datos, x0)
+    + trapezoidal_rule(funcion, a, b)
+    + simpson_rule(funcion, a, b)
+    + simpson_38_rule(funcion, a, b)
+    + n4_close_rule(funcion, a, b)
+    + midpoint_rule(funcion, a, b)
+    + n1_open_rule(funcion, a, b)
+    + n2_open_rule(funcion, a, b)
+    + n3_open_rule(funcion, a, b)
+    + composite_simpson_rule(funcion, a, b, n)
+    + composite_trapezoidal_rule(funcion, a, b, n)
+    + composite_midpoint_rule(funcion, a, b, n)
+  }
+
 
   ' transformacion.py: Se encarga de transformar la cadena de la función a callable
   class transformacion {
@@ -61,15 +107,19 @@ package "Librería: numath-Libary"{
 
 ' Relacionamos los ficheros de la carpeta numath
 init --> ecuaciones_una_variable : "Inicializa la librería"
-ecuaciones_una_variable--> transformacion : "Transforma la entrada de la función en una función callable"
+init --> diferenciacion_numerica_e_integracion : "Inicializa la librería"
+ecuaciones_una_variable--> transformacion : "Transforma la función de entrada"
+diferenciacion_numerica_e_integracion --> transformacion : "Transforma la función de entrada"
 
 ' setup.py se encarga de empaquetar la librería numath
 setup --> "numath" : "Empaqueta la librería"
 
 ' La función create_app() crea una instancia de Flask y registra el blueprint definido en operaciones.py
-__init__ --> operaciones: "Registra una solicitud POST"
+__init__ --> ecuaciones_una_variable_B : "Registra una solicitud POST"
+__init__ --> diferenciacion_numerica_e_integracion_B: "Registra una solicitud POST"
 
 ' Los endpoints definidos en operaciones.py utilizan la librería numath para realizar los cálculos
-operaciones --> ecuaciones_una_variable : "LLama a métodos de la librería"
+ecuaciones_una_variable_B --> ecuaciones_una_variable : "LLama a métodos de la librería"
+diferenciacion_numerica_e_integracion_B--> diferenciacion_numerica_e_integracion: "LLama a métodos de la librería"
 
 @enduml

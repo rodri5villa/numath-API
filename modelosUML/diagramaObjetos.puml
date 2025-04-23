@@ -29,7 +29,7 @@ package "Librería: numath-Libary"{
 
 flask_app -- operaciones: "Registra una llamada de operacion bisección >"
 operaciones -- ecuaciones_una_variable : "LLama a método bisección de la librería >"
-ecuaciones_una_variable-- transformacion : "Transforma la entrada de la función en una función callable >"
+ecuaciones_una_variable-- transformacion : "Transforma la función de entrada >"
 transformacion -- ecuaciones_una_variable : "Función transformada >"
 ecuaciones_una_variable -- operaciones : "Retorna resultado >"
 operaciones -- flask_app : "Envía Respuesta >"
