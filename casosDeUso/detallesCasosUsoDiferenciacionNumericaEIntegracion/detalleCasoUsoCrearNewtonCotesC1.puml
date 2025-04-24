@@ -1,0 +1,56 @@
+@startuml
+
+skinparam state {
+  BackgroundColor #faf4b4
+  BorderColor #c90000
+}
+
+skinparam note {
+  BackgroundColor #f5f5f5
+}
+
+skinparam linetype polyline
+
+title Detalle Caso de Uso Crear Operación Newton Cotes Cerrado n=1
+
+
+NEWTON_COTES_C1-[#green]-> crear_newton_cotes_c1
+note on link
+  **Usuario solicita:**
+  - Crear operación newton cotes cerrado n=1
+end note
+
+state crear_newton_cotes_c1{
+  state 1 as " "
+  state 2 as " "
+  state 3 as " "
+  
+  [*] -[#green]-> 1
+  1 -[#green]-> 2
+  note on link
+      **Sistema requiere Parámetros:**
+      - funcion
+      - a
+      - b
+  end note
+  2 -[#green]-> 3
+  note on link
+    **Usuario Proporciona Parámetros:**
+      - funcion
+      - a
+      - b
+  end note
+  3 -[#red]-> 1
+  note on link
+    [Parámetros 
+      Inválidos]
+  end note
+  3 -[#green]-> [*]
+
+}
+
+crear_newton_cotes_c1-[#green]-> :abrirResultadoNewtonCotesC1
+
+:abrirResultadoNewtonCotesC1-[#green]-> RESULTADO_NEWTON_COTES_C1
+
+@enduml

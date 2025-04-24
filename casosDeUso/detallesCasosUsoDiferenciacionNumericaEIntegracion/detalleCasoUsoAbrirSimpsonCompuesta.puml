@@ -1,0 +1,47 @@
+@startuml
+
+skinparam state {
+  BackgroundColor #faf4b4
+  BorderColor #c90000
+}
+
+skinparam note {
+  BackgroundColor #f5f5f5
+}
+
+skinparam linetype polyline
+
+title Detalle Caso de Uso Abrir Regla Simpson Compuesta
+
+
+DIFERENCIACION_NUMERICA_E_INTEGRACION-[#green]-> abrir_simpson_compuesta
+note on link
+  **Usuario solicita:**
+  - Abrir Regla Simpson Compuesta
+end note
+
+state abrir_simpson_compuesta{
+  state 1 as " "
+  state 2 as " "
+  state 3 as " "
+  
+  [*] -[#green]-> 1
+  1 -[#green]-> 2
+  note on link
+      **Sistema requiere:**
+      - Método simpson compuesto conocido
+  end note
+  2 -[#green]-> 3
+  note on link
+    **Usuario Selecciona:**
+    - Método simpson compuesto conocido
+  end note
+ 
+  3 -[#green]-> [*]
+}
+
+abrir_simpson_compuesta-[#green]-> :abrirSimpsonCompuesta
+
+:abrirSimpsonCompuesta-[#green]-> SIMPSON_COMPUESTA
+
+@enduml

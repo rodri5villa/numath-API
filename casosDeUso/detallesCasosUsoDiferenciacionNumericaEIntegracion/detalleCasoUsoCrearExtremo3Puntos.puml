@@ -1,0 +1,94 @@
+@startuml
+
+skinparam state {
+  BackgroundColor #faf4b4
+  BorderColor #c90000
+}
+
+skinparam note {
+  BackgroundColor #f5f5f5
+}
+
+skinparam linetype polyline
+
+title Detalle Caso de Uso Crear Operación Extremo de 3 Puntos
+
+
+EXTREMO_3_PUNTOS -[#green]-> crear_extremo_3_puntos_funcion
+note on link
+  **Usuario solicita:**
+  - Crear operación extremo de 3 puntos
+  **Usuario elige:**
+  - Función de entrada
+end note
+EXTREMO_3_PUNTOS -[#green]-> crear_extremo_3_puntos_datos
+note on link
+  **Usuario solicita:**
+  - Crear operación extremo de 3 puntos
+  **Usuario elige:**
+  - Conjunto de datos de entrada
+end note
+
+state crear_extremo_3_puntos_funcion{
+  state 1 as " "
+  state 2 as " "
+  state 3 as " "
+  
+  [*] -[#green]-> 1
+  1 -[#green]-> 2
+  note on link
+      **Sistema requiere Parámetros:**
+      - funcion
+      - x0
+      - h
+  end note
+  2 -[#green]-> 3
+  note on link
+    **Usuario Proporciona Parámetros:**
+      - funcion
+      - x0
+      - h
+  end note
+  3 -[#red]-> 1
+  note on link
+    [Parámetros 
+      Inválidos]
+  end note
+  3 -[#green]-> [*]
+
+}
+
+state crear_extremo_3_puntos_datos{
+  state 4 as " "
+  state 5 as " "
+  state 6 as " "
+  
+  [*] -[#green]-> 4
+  4 -[#green]-> 5
+  note on link
+      **Sistema requiere Parámetros:**
+      - datos
+      - x0
+  end note
+  5 -[#green]-> 6
+  note on link
+    **Usuario Proporciona Parámetros:**
+      - datos
+      - x0
+  end note
+  6 -[#red]-> 4
+  note on link
+    [Parámetros 
+     Inválidos]
+  end note
+  6 -[#green]-> [*]
+
+}
+
+
+crear_extremo_3_puntos_funcion-[#green]-> :abrirResultadoExtremo3Puntos
+crear_extremo_3_puntos_datos -[#green]-> :abrirResultadoExtremo3Puntos
+
+:abrirResultadoExtremo3Puntos-[#green]-> RESULTADO_EXTREMO_3_PUNTOS
+
+@enduml

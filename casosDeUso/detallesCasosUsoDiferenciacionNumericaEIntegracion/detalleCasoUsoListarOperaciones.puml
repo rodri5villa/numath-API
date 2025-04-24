@@ -1,0 +1,122 @@
+@startuml
+
+skinparam state {
+  BackgroundColor #faf4b4
+  BorderColor #c90000
+}
+
+skinparam note {
+  BackgroundColor #f5f5f5
+}
+
+skinparam linetype polyline
+
+title Detalle Caso de Uso Listar Operaciones
+
+
+ESTADO_PRINCIPAL-[#green]-> :listar_operaciones
+note on link
+  **Sisteme requiere:**
+  - Listar Operaciones
+end note
+
+PUNTO_MEDIO_3_PUNTOS-[#green]-> :listar_operaciones
+note on link
+  **Sistema requiere:**
+  - Listar Operaciones
+end note
+
+EXTREMO_3_PUNTOS-[#green]-> :listar_operaciones
+note on link
+  **Sistema requiere:**
+  - Listar Operaciones
+end note
+
+PUNTO_MEDIO_5_PUNTOS-[#green]-> :listar_operaciones
+note on link
+  **Sistema requiere:**
+  - Listar Operaciones
+end note
+
+EXTREMO_5_PUNTOS-[#green]-> :listar_operaciones
+note on link
+  **Sistema requiere:**
+  - Listar Operaciones
+end note
+
+PUNTO_MEDIO_2_DERIVADA-[#green]-> :listar_operaciones
+note on link
+  **Sistema requiere:**
+  - Listar Operaciones
+end note
+
+NEWTON_COTES_C1-[#green]-> :listar_operaciones
+note on link
+  **Sistema requiere:**
+  - Listar Operaciones
+end note
+
+NEWTON_COTES_C2-[#green]-> :listar_operaciones
+note on link
+  **Sistema requiere:**
+  - Listar Operaciones
+end note
+
+NEWTON_COTES_C3-[#green]-> :listar_operaciones
+note on link
+  **Sistema requiere:**
+  - Listar Operaciones
+end note
+
+NEWTON_COTES_C4-[#green]-> :listar_operaciones
+note on link
+  **Sistema requiere:**
+  - Listar Operaciones
+end note
+
+NEWTON_COTES_A0-[#green]-> :listar_operaciones
+note on link
+  **Sistema requiere:**
+  - Listar Operaciones
+end note
+
+NEWTON_COTES_A1-[#green]-> :listar_operaciones
+note on link
+  **Sistema requiere:**
+  - Listar Operaciones
+end note
+
+NEWTON_COTES_A2-[#green]-> :listar_operaciones
+note on link
+  **Sistema requiere:**
+  - Listar Operaciones
+end note
+
+NEWTON_COTES_A3-[#green]-> :listar_operaciones
+note on link
+  **Sistema requiere:**
+  - Listar Operaciones
+end note
+
+SIMPSON_COMPUESTA-[#green]-> :listar_operaciones
+note on link
+  **Sistema requiere:**
+  - Listar Operaciones
+end note
+
+TRAPEZOIDAL_COMPUESTA-[#green]-> :listar_operaciones
+note on link
+  **Sistema requiere:**
+  - Listar Operaciones
+end note
+
+PUNTO_MEDIO_COMPUESTA-[#green]-> :listar_operaciones
+note on link
+  **Sistema requiere:**
+  - Listar Operaciones
+end note
+
+
+:listar_operaciones-[#green]-> DIFERENCIACION_NUMERICA_E_INTEGRACION
+
+@enduml

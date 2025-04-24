@@ -1,0 +1,47 @@
+@startuml
+
+skinparam state {
+  BackgroundColor #faf4b4
+  BorderColor #c90000
+}
+
+skinparam note {
+  BackgroundColor #f5f5f5
+}
+
+skinparam linetype polyline
+
+title Detalle Caso de Uso Abrir Punto Medio de 3 Puntos
+
+
+DIFERENCIACION_NUMERICA_E_INTEGRACION-[#green]-> abrir_punto_medio_3_puntos
+note on link
+  **Usuario solicita:**
+  - Abrir Punto Medio de 3 Puntos
+end note
+
+state abrir_punto_medio_3_puntos{
+  state 1 as " "
+  state 2 as " "
+  state 3 as " "
+  
+  [*] -[#green]-> 1
+  1 -[#green]-> 2
+  note on link
+      **Sistema requiere:**
+      - Método punto medio de 3 puntos conocido
+  end note
+  2 -[#green]-> 3
+  note on link
+    **Usuario Selecciona:**
+    - Método punto medio de 3 puntos conocido
+  end note
+ 
+  3 -[#green]-> [*]
+}
+
+abrir_punto_medio_3_puntos-[#green]-> :abrirPuntoMedio3Puntos
+
+:abrirPuntoMedio3Puntos-[#green]-> PUNTO_MEDIO_3_PUNTOS
+
+@enduml

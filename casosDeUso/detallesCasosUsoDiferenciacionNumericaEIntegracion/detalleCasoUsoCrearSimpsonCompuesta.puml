@@ -1,0 +1,58 @@
+@startuml
+
+skinparam state {
+  BackgroundColor #faf4b4
+  BorderColor #c90000
+}
+
+skinparam note {
+  BackgroundColor #f5f5f5
+}
+
+skinparam linetype polyline
+
+title Detalle Caso de Uso Crear Operación Simpson Compuesta
+
+
+SIMPSON_COMPUESTA-[#green]-> crear_simpson_compuesta
+note on link
+  **Usuario solicita:**
+  - Crear operación simpson compuesta
+end note
+
+state crear_simpson_compuesta{
+  state 1 as " "
+  state 2 as " "
+  state 3 as " "
+  
+  [*] -[#green]-> 1
+  1 -[#green]-> 2
+  note on link
+      **Sistema requiere Parámetros:**
+      - funcion
+      - a
+      - b
+      - n
+  end note
+  2 -[#green]-> 3
+  note on link
+    **Usuario Proporciona Parámetros:**
+      - funcion
+      - a
+      - b
+      - n
+  end note
+  3 -[#red]-> 1
+  note on link
+    [Parámetros 
+      Inválidos]
+  end note
+  3 -[#green]-> [*]
+
+}
+
+crear_simpson_compuesta-[#green]-> :abrirResultadoSimpsonCompuesta
+
+:abrirResultadoSimpsonCompuesta-[#green]-> RESULTADO_SIMPSON_COMPUESTA
+
+@enduml
