@@ -1,0 +1,31 @@
+@startuml
+
+skinparam state {
+  BackgroundColor #faf4b4
+  BorderColor #c90000
+}
+
+skinparam note {
+  BackgroundColor #f5f5f5
+}
+
+skinparam linetype polyline
+
+title Detalle Caso de Uso Resultado Regla del Punto Medio Compuesta
+
+RESULTADO_PUNTO_MEDIO_COMPUESTA-[#green]-> :libreria
+note on link
+  **Aplicación solicita:**
+  - Importar método punto medio compuesta
+end note
+
+:libreria -[#green]-> :abrir_resultado_punto_medio_compuesta
+note on link
+  **Librería realiza:**
+  - Calcular operación punto medio compuesta
+  - Devolver resultado
+end note
+
+:abrir_resultado_punto_medio_compuesta-[#green]-> PUNTO_MEDIO_COMPUESTA
+
+@enduml

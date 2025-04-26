@@ -1,0 +1,31 @@
+@startuml
+
+skinparam state {
+  BackgroundColor #faf4b4
+  BorderColor #c90000
+}
+
+skinparam note {
+  BackgroundColor #f5f5f5
+}
+
+skinparam linetype polyline
+
+title Detalle Caso de Uso Resultado Extremo de 3 Puntos
+
+RESULTADO_EXTREMO_3_PUNTOS-[#green]-> :libreria
+note on link
+  **Aplicación solicita:**
+  - Importar método extremo 3 puntos
+end note
+
+:libreria -[#green]-> :abrir_resultado_extremo_3_puntos
+note on link
+  **Librería realiza:**
+  - Calcular operación extremo 3 puntos
+  - Devolver resultado
+end note
+
+:abrir_resultado_extremo_3_puntos-[#green]-> EXTREMO_3_PUNTOS
+
+@enduml

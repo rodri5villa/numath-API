@@ -1,0 +1,31 @@
+@startuml
+
+skinparam state {
+  BackgroundColor #faf4b4
+  BorderColor #c90000
+}
+
+skinparam note {
+  BackgroundColor #f5f5f5
+}
+
+skinparam linetype polyline
+
+title Detalle Caso de Uso Resultado Punto Medio de 5 Puntos
+
+RESULTADO_PUNTO_MEDIO_5_PUNTOS-[#green]-> :libreria
+note on link
+  **Aplicación solicita:**
+  - Importar método punto medio 5 puntos
+end note
+
+:libreria -[#green]-> :abrir_resultado_punto_medio_5_puntos
+note on link
+  **Librería realiza:**
+  - Calcular operación punto medio 5 puntos
+  - Devolver resultado
+end note
+
+:abrir_resultado_punto_medio_5_puntos-[#green]-> PUNTO_MEDIO_5_PUNTOS
+
+@enduml

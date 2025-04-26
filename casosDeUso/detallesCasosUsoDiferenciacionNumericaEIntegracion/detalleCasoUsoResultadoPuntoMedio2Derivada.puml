@@ -1,0 +1,31 @@
+@startuml
+
+skinparam state {
+  BackgroundColor #faf4b4
+  BorderColor #c90000
+}
+
+skinparam note {
+  BackgroundColor #f5f5f5
+}
+
+skinparam linetype polyline
+
+title Detalle Caso de Uso Resultado Punto Medio 2º Derivada
+
+RESULTADO_PUNTO_MEDIO_2_DERIVADA-[#green]-> :libreria
+note on link
+  **Aplicación solicita:**
+  - Importar método punto medio 2º derivada
+end note
+
+:libreria -[#green]-> :abrir_resultado_punto_medio_2_derivada
+note on link
+  **Librería realiza:**
+  - Calcular operación punto medio 2º derivada
+  - Devolver resultado
+end note
+
+:abrir_resultado_punto_medio_2_derivada-[#green]-> PUNTO_MEDIO_2_DERIVADA
+
+@enduml
