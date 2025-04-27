@@ -10,7 +10,7 @@ package "API" {
   }
   
   ' Módulo operaciones.py donde se define el blueprint y los endpoints
-  class ecuaciones_una_variable_B {
+  class ecuaciones_una_variable_controller {
     +bisection_endpoint()
     +fixed_point_endpoint()
     +newton_endpoint()
@@ -22,7 +22,7 @@ package "API" {
   }
 
   ' Módulo operaciones.py donde se define el blueprint y los endpoints
-  class diferenciacion_numerica_e_integracion_B{
+  class diferenciacion_numerica_e_integracion_controller{
     + derivative_three_points_central_endpoint()
     + derivative_three_points_border_endpoint()
     + derivative_five_points_central_endpoint()
@@ -115,11 +115,11 @@ diferenciacion_numerica_e_integracion --> transformacion : "Transforma la funci�
 setup --> "numath" : "Empaqueta la librería"
 
 ' La función create_app() crea una instancia de Flask y registra el blueprint definido en operaciones.py
-__init__ --> ecuaciones_una_variable_B : "Registra una solicitud POST"
-__init__ --> diferenciacion_numerica_e_integracion_B: "Registra una solicitud POST"
+__init__ --> ecuaciones_una_variable_controller : "Registra una solicitud POST"
+__init__ --> diferenciacion_numerica_e_integracion_controller: "Registra una solicitud POST"
 
 ' Los endpoints definidos en operaciones.py utilizan la librería numath para realizar los cálculos
-ecuaciones_una_variable_B --> ecuaciones_una_variable : "LLama a métodos de la librería"
-diferenciacion_numerica_e_integracion_B--> diferenciacion_numerica_e_integracion: "LLama a métodos de la librería"
+ecuaciones_una_variable_controller --> ecuaciones_una_variable : "LLama a métodos de la librería"
+diferenciacion_numerica_e_integracion_controller--> diferenciacion_numerica_e_integracion: "LLama a métodos de la librería"
 
 @enduml
