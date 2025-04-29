@@ -1,5 +1,7 @@
 @startuml
 
+top to bottom direction
+
 skinparam state {
   BackgroundColor #faf4b4
   BorderColor #c90000
@@ -13,6 +15,7 @@ skinparam linetype polyline
 
 title Detalle Caso de Uso Crear Operación Trapezoidal Compuesta
 
+state TRAPEZOIDAL_COMPUESTA
 
 TRAPEZOIDAL_COMPUESTA-[#green]-> crear_trapezoidal_compuesta
 note on link
@@ -51,8 +54,8 @@ state crear_trapezoidal_compuesta{
 
 }
 
-crear_trapezoidal_compuesta-[#green]-> :abrirResultadoTrapezoidalCompuesta
+crear_trapezoidal_compuesta-[#green]-> :calcularResultadoTrapezoidalCompuesta
 
-:abrirResultadoTrapezoidalCompuesta-[#green]-> RESULTADO_TRAPEZOIDAL_COMPUESTA
+:calcularResultadoTrapezoidalCompuesta-[#green]-> TRAPEZOIDAL_COMPUESTA
 
 @enduml

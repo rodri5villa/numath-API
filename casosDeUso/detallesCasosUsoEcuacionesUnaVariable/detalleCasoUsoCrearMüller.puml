@@ -1,5 +1,7 @@
 @startuml
 
+top to bottom direction
+
 skinparam state {
   BackgroundColor #faf4b4
   BorderColor #c90000
@@ -13,6 +15,7 @@ skinparam linetype polyline
 
 title Detalle Caso de Uso Crear Operación Müller
 
+state MÜLLER 
 
 MÜLLER -[#green]-> crear_müller
 note on link
@@ -53,8 +56,8 @@ state crear_müller {
   3 -[#green]-> [*]
 }
 
-crear_müller -[#green]-> :abrirResultadoMüller
+crear_müller -[#green]-> :calcularResultadoMüller
 
-:abrirResultadoMüller -[#green]-> RESULTADO_MÜLLER
+:calcularResultadoMüller-[#green]-> MÜLLER 
 
 @enduml

@@ -45,15 +45,10 @@ note on link
   Listar Operaciones
 end note
 
-BISECCION-D-> RESULTADO_BISECCION
+BISECCION-D-> BISECCION
 note on link
   Crear Operación Bisección 
 end note 
-
-RESULTADO_BISECCION --> BISECCION
-note on link
-  Devolver Resultado
-end note
 
 ECUACIONES_UNA_VARIABLE-d-> PUNTO_FIJO
 note on link
@@ -65,15 +60,10 @@ note on link
   Listar Operaciones
 end note
 
-PUNTO_FIJO-D-> RESULTADO_PUNTO_FIJO
+PUNTO_FIJO-D-> PUNTO_FIJO
 note on link
   Crear Operación Punto Fijo
 end note 
-
-RESULTADO_PUNTO_FIJO --> PUNTO_FIJO
-note on link
-  Devolver Resultado
-end note
 
 ECUACIONES_UNA_VARIABLE-d-> NEWTON
 note on link
@@ -85,15 +75,10 @@ note on link
   Listar Operaciones
 end note
 
-NEWTON-D-> RESULTADO_NEWTON
+NEWTON-D-> NEWTON
 note on link
   Crear Operación Newton
 end note 
-
-RESULTADO_NEWTON --> NEWTON
-note on link
-  Devolver Resultado
-end note
 
 ECUACIONES_UNA_VARIABLE-d-> SECANTE
 note on link
@@ -105,15 +90,10 @@ note on link
   Listar Operaciones
 end note
 
-SECANTE-D-> RESULTADO_SECANTE
+SECANTE-D-> SECANTE
 note on link
   Crear Operación Secante
 end note 
-
-RESULTADO_SECANTE --> SECANTE
-note on link
-  Devolver Resultado
-end note
 
 ECUACIONES_UNA_VARIABLE-d-> FALSA_POSICION
 note on link
@@ -125,15 +105,10 @@ note on link
   Listar Operaciones
 end note
 
-FALSA_POSICION-D-> RESULTADO_FALSA_POSICION
+FALSA_POSICION-D-> FALSA_POSICION
 note on link
   Crear Operación Falsa Posición
 end note 
-
-RESULTADO_FALSA_POSICION --> FALSA_POSICION
-note on link
-  Devolver Resultado
-end note
 
 ECUACIONES_UNA_VARIABLE-d-> STEFFENSEN
 note on link
@@ -145,15 +120,10 @@ note on link
   Listar Operaciones
 end note
 
-STEFFENSEN-D-> RESULTADO_STEFFENSEN
+STEFFENSEN-D-> STEFFENSEN
 note on link
   Crear Operación Steffensen
 end note 
-
-RESULTADO_STEFFENSEN --> STEFFENSEN
-note on link
-  Devolver Resultado
-end note
 
 ECUACIONES_UNA_VARIABLE-d-> HORNER
 note on link
@@ -165,16 +135,10 @@ note on link
   Listar Operaciones
 end note
 
-HORNER-D-> RESULTADO_HORNER
+HORNER-D-> HORNER
 note on link
   Crear Operación Horner
 end note 
-
-RESULTADO_HORNER --> HORNER
-note on link
-  Devolver Resultado
-end note
-
 
 ECUACIONES_UNA_VARIABLE-d-> MÜLLER
 note on link
@@ -186,15 +150,10 @@ note on link
   Listar Operaciones
 end note
 
-MÜLLER-D-> RESULTADO_MÜLLER
+MÜLLER-D-> MÜLLER
 note on link
   Crear Operación Müller
 end note 
-
-RESULTADO_MÜLLER --> MÜLLER
-note on link
-  Devolver Resultado
-end note
 }
 
 WEB --> [*]

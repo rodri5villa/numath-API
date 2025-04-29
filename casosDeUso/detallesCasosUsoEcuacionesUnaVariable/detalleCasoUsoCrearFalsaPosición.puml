@@ -1,5 +1,7 @@
 @startuml
 
+top to bottom direction
+
 skinparam state {
   BackgroundColor #faf4b4
   BorderColor #c90000
@@ -13,6 +15,7 @@ skinparam linetype polyline
 
 title Detalle Caso de Uso Crear Operación Falsa Posición
 
+state FALSA_POSICION
 
 FALSA_POSICION -[#green]-> crear_falsa_posicion
 note on link
@@ -51,8 +54,8 @@ state crear_falsa_posicion {
   3 -[#green]-> [*]
 }
 
-crear_falsa_posicion -[#green]-> :abrirResultadoFalsaPosicion
+crear_falsa_posicion -[#green]-> :calcularResultadoFalsaPosicion
 
-:abrirResultadoFalsaPosicion -[#green]-> RESULTADO_FALSA_POSICION
+:calcularResultadoFalsaPosicion-[#green]-> FALSA_POSICION
 
 @enduml

@@ -1,5 +1,7 @@
 @startuml
 
+top to bottom direction
+
 skinparam state {
   BackgroundColor #faf4b4
   BorderColor #c90000
@@ -13,6 +15,7 @@ skinparam linetype polyline
 
 title Detalle Caso de Uso Crear Operación Newton Cotes Cerrado n=2
 
+state NEWTON_COTES_C2
 
 NEWTON_COTES_C2-[#green]-> crear_newton_cotes_c2
 note on link
@@ -49,8 +52,8 @@ state crear_newton_cotes_c2{
 
 }
 
-crear_newton_cotes_c2-[#green]-> :abrirResultadoNewtonCotesC2
+crear_newton_cotes_c2-[#green]-> :calcularResultadoNewtonCotesC2
 
-:abrirResultadoNewtonCotesC2-[#green]-> RESULTADO_NEWTON_COTES_C2
+:calcularResultadoNewtonCotesC2-[#green]-> NEWTON_COTES_C2
 
 @enduml

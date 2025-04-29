@@ -11,8 +11,6 @@
 ### Actores
 
 - Usuario
-- Aplicación
-- Librería
 
 ### Casos de uso
 
@@ -40,14 +38,6 @@ Ofrece la opción de crear un operación de bisección.
 | ------------------------------------------------------------ | -------------------------------------------------------------- |
 |  ![](../imágenes/casosUso/casosUsoEcuacionesUnaVariable/casoUsoBisección.svg)  | [Código PUML](../casosDeUso/casosUsoEcuacionesUnaVariable/casoUsoBisección.puml) |
 
-#### - Resultado Bisección
-
-Muestra como la Aplicación y la Librería retornan el resultado de la operación de bisección.
-
-|                                                              |                                                                |
-| ------------------------------------------------------------ | -------------------------------------------------------------- |
-|  ![](../imágenes/casosUso/casosUsoEcuacionesUnaVariable/casoUsoResultadoBisección.svg)  | [Código PUML](../casosDeUso/casosUsoEcuacionesUnaVariable/casoUsoResultadoBisección.puml) |
-
 #### - Punto Fijo
 
 Ofrece la opción de crear un operación de punto fijo.
@@ -55,14 +45,6 @@ Ofrece la opción de crear un operación de punto fijo.
 |                                                              |                                                                |
 | ------------------------------------------------------------ | -------------------------------------------------------------- |
 |  ![](../imágenes/casosUso/casosUsoEcuacionesUnaVariable/casoUsoPuntoFijo.svg)  | [Código PUML](../casosDeUso/casosUsoEcuacionesUnaVariable/casoUsoPuntoFijo.puml) |
-
-#### - Resultado Punto Fijo
-
-Muestra como la Aplicación y la Librería retornan el resultado de la operación de punto fijo.
-
-|                                                              |                                                                |
-| ------------------------------------------------------------ | -------------------------------------------------------------- |
-|  ![](../imágenes/casosUso/casosUsoEcuacionesUnaVariable/casoUsoResultadoPuntoFijo.svg)  | [Código PUML](../casosDeUso/casosUsoEcuacionesUnaVariable/casoUsoResultadoPuntoFijo.puml) |
 
 #### - Newton
 
@@ -72,14 +54,6 @@ Ofrece la opción de crear un operación de newton.
 | ------------------------------------------------------------ | -------------------------------------------------------------- |
 |  ![](../imágenes/casosUso/casosUsoEcuacionesUnaVariable/casoUsoNewton.svg)  | [Código PUML](../casosDeUso/casosUsoEcuacionesUnaVariable/casoUsoNewton.puml) |
 
-#### - Resultado Newton
-
-Muestra como la Aplicación y la Librería retornan el resultado de la operación de newton.
-
-|                                                              |                                                                |
-| ------------------------------------------------------------ | -------------------------------------------------------------- |
-|  ![](../imágenes/casosUso/casosUsoEcuacionesUnaVariable/casoUsoResultadoNewton.svg)  | [Código PUML](../casosDeUso/casosUsoEcuacionesUnaVariable/casoUsoResultadoNewton.puml) |
-
 #### - Secante
 
 Ofrece la opción de crear un operación de secante.
@@ -87,14 +61,6 @@ Ofrece la opción de crear un operación de secante.
 |                                                              |                                                                |
 | ------------------------------------------------------------ | -------------------------------------------------------------- |
 |  ![](../imágenes/casosUso/casosUsoEcuacionesUnaVariable/casoUsoSecante.svg)  | [Código PUML](../casosDeUso/casosUsoEcuacionesUnaVariable/casoUsoSecante.puml) |
-
-#### - Resultado Secante
-
-Muestra como la Aplicación y la Librería retornan el resultado de la operación de secante.
-
-|                                                              |                                                                |
-| ------------------------------------------------------------ | -------------------------------------------------------------- |
-|  ![](../imágenes/casosUso/casosUsoEcuacionesUnaVariable/casoUsoResultadoSecante.svg)  | [Código PUML](../casosDeUso/casosUsoEcuacionesUnaVariable/casoUsoResultadoSecante.puml) |
 
 #### - Falsa Posición
 
@@ -104,14 +70,6 @@ Ofrece la opción de crear un operación de falsa posición.
 | ------------------------------------------------------------ | -------------------------------------------------------------- |
 |  ![](../imágenes/casosUso/casosUsoEcuacionesUnaVariable/casoUsoFalsaPosición.svg)  | [Código PUML](../casosDeUso/casosUsoEcuacionesUnaVariable/casoUsoFalsaPosición.puml) |
 
-#### - Resultado Falsa Posición
-
-Muestra como la Aplicación y la Librería retornan el resultado de la operación de falsa posición.
-
-|                                                              |                                                                |
-| ------------------------------------------------------------ | -------------------------------------------------------------- |
-|  ![](../imágenes/casosUso/casosUsoEcuacionesUnaVariable/casoUsoResultadoFalsaPosición.svg)  | [Código PUML](../casosDeUso/casosUsoEcuacionesUnaVariable/casoUsoResultadoFalsaPosición.puml) |
-
 #### - Steffensen
 
 Ofrece la opción de crear un operación de steffensen.
@@ -119,14 +77,6 @@ Ofrece la opción de crear un operación de steffensen.
 |                                                              |                                                                |
 | ------------------------------------------------------------ | -------------------------------------------------------------- |
 |  ![](../imágenes/casosUso/casosUsoEcuacionesUnaVariable/casoUsoSteffensen.svg)  | [Código PUML](../casosDeUso/casosUsoEcuacionesUnaVariable/casoUsoSteffensen.puml) |
-
-#### - Resultado Steffensen
-
-Muestra como la Aplicación y la Librería retornan el resultado de la operación de steffensen.
-
-|                                                              |                                                                |
-| ------------------------------------------------------------ | -------------------------------------------------------------- |
-|  ![](../imágenes/casosUso/casosUsoEcuacionesUnaVariable/casoUsoResultadoSteffensen.svg)  | [Código PUML](../casosDeUso/casosUsoEcuacionesUnaVariable/casoUsoResultadoSteffensen.puml) |
 
 #### - Horner
 
@@ -136,14 +86,6 @@ Ofrece la opción de crear un operación de horner.
 | ------------------------------------------------------------ | -------------------------------------------------------------- |
 |  ![](../imágenes/casosUso/casosUsoEcuacionesUnaVariable/casoUsoHorner.svg)  | [Código PUML](../casosDeUso/casosUsoEcuacionesUnaVariable/casoUsoHorner.puml) |
 
-#### - Resultado Horner
-
-Muestra como la Aplicación y la Librería retornan el resultado de la operación de horner.
-
-|                                                              |                                                                |
-| ------------------------------------------------------------ | -------------------------------------------------------------- |
-|  ![](../imágenes/casosUso/casosUsoEcuacionesUnaVariable/casoUsoResultadoHorner.svg)  | [Código PUML](../casosDeUso/casosUsoEcuacionesUnaVariable/casoUsoResultadoHorner.puml) |
-
 #### - Müller
 
 Ofrece la opción de crear un operación de müller.
@@ -151,14 +93,6 @@ Ofrece la opción de crear un operación de müller.
 |                                                              |                                                                |
 | ------------------------------------------------------------ | -------------------------------------------------------------- |
 |  ![](../imágenes/casosUso/casosUsoEcuacionesUnaVariable/casoUsoMüller.svg)  | [Código PUML](../casosDeUso/casosUsoEcuacionesUnaVariable/casoUsoMüller.puml) |
-
-#### - Resultado Müller
-
-Muestra como la Aplicación y la Librería retornan el resultado de la operación de müller.
-
-|                                                              |                                                                |
-| ------------------------------------------------------------ | -------------------------------------------------------------- |
-|  ![](../imágenes/casosUso/casosUsoEcuacionesUnaVariable/casoUsoResultadoMüller.svg)  | [Código PUML](../casosDeUso/casosUsoEcuacionesUnaVariable/casoUsoResultadoMüller.puml) |
 
 ---
 
@@ -188,12 +122,6 @@ Muestra como la Aplicación y la Librería retornan el resultado de la operació
 | ---------------------------------------------------------------------- | ------------------------------------------------------------------------ |
 | ![](../imágenes/casosUso/detallesCasosUsoEcuacionesUnaVariable/detalleCasoUsoCrearBisección.svg) | [Código PUML](../casosDeUso/detallesCasosUsoEcuacionesUnaVariable/detalleCasoUsoCrearBisección.puml) |
 
-#### - Resultado Bisección
-
-|                                                                        |                                                                          |
-| ---------------------------------------------------------------------- | ------------------------------------------------------------------------ |
-| ![](../imágenes/casosUso/detallesCasosUsoEcuacionesUnaVariable/detalleCasoUsoResultadoBisección.svg) | [Código PUML](../casosDeUso/detallesCasosUsoEcuacionesUnaVariable/detalleCasoUsoResultadoBisección.puml) |
-
 #### - Abrir Método Punto Fijo
 
 |                                                                        |                                                                          |
@@ -205,12 +133,6 @@ Muestra como la Aplicación y la Librería retornan el resultado de la operació
 |                                                                        |                                                                          |
 | ---------------------------------------------------------------------- | ------------------------------------------------------------------------ |
 | ![](../imágenes/casosUso/detallesCasosUsoEcuacionesUnaVariable/detalleCasoUsoCrearPuntoFijo.svg) | [Código PUML](../casosDeUso/detallesCasosUsoEcuacionesUnaVariable/detalleCasoUsoCrearPuntoFijo.puml) |
-
-#### - Resultado Punto Fijo
-
-|                                                                        |                                                                          |
-| ---------------------------------------------------------------------- | ------------------------------------------------------------------------ |
-| ![](../imágenes/casosUso/detallesCasosUsoEcuacionesUnaVariable/detalleCasoUsoResultadoPuntoFijo.svg) | [Código PUML](../casosDeUso/detallesCasosUsoEcuacionesUnaVariable/detalleCasoUsoResultadoPuntoFijo.puml) |
 
 #### - Abrir Método Newton
 
@@ -224,12 +146,6 @@ Muestra como la Aplicación y la Librería retornan el resultado de la operació
 | ---------------------------------------------------------------------- | ------------------------------------------------------------------------ |
 | ![](../imágenes/casosUso/detallesCasosUsoEcuacionesUnaVariable/detalleCasoUsoCrearNewton.svg) | [Código PUML](../casosDeUso/detallesCasosUsoEcuacionesUnaVariable/detalleCasoUsoCrearNewton.puml) |
 
-#### - Resultado Newton
-
-|                                                                        |                                                                          |
-| ---------------------------------------------------------------------- | ------------------------------------------------------------------------ |
-| ![](../imágenes/casosUso/detallesCasosUsoEcuacionesUnaVariable/detalleCasoUsoResultadoNewton.svg) | [Código PUML](../casosDeUso/detallesCasosUsoEcuacionesUnaVariable/detalleCasoUsoResultadoNewton.puml) |
-
 #### - Abrir Método Secante
 
 |                                                                        |                                                                          |
@@ -241,12 +157,6 @@ Muestra como la Aplicación y la Librería retornan el resultado de la operació
 |                                                                        |                                                                          |
 | ---------------------------------------------------------------------- | ------------------------------------------------------------------------ |
 | ![](../imágenes/casosUso/detallesCasosUsoEcuacionesUnaVariable/detalleCasoUsoCrearSecante.svg) | [Código PUML](../casosDeUso/detallesCasosUsoEcuacionesUnaVariable/detalleCasoUsoCrearSecante.puml) |
-
-#### - Resultado Secante
-
-|                                                                        |                                                                          |
-| ---------------------------------------------------------------------- | ------------------------------------------------------------------------ |
-| ![](../imágenes/casosUso/detallesCasosUsoEcuacionesUnaVariable/detalleCasoUsoResultadoSecante.svg) | [Código PUML](../casosDeUso/detallesCasosUsoEcuacionesUnaVariable/detalleCasoUsoResultadoSecante.puml) |
 
 #### - Abrir Método Falsa Posición
 
@@ -260,12 +170,6 @@ Muestra como la Aplicación y la Librería retornan el resultado de la operació
 | ---------------------------------------------------------------------- | ------------------------------------------------------------------------ |
 | ![](../imágenes/casosUso/detallesCasosUsoEcuacionesUnaVariable/detalleCasoUsoCrearFalsaPosición.svg) | [Código PUML](../casosDeUso/detallesCasosUsoEcuacionesUnaVariable/detalleCasoUsoCrearFalsaPosición.puml) |
 
-#### - Resultado Falsa Posición
-
-|                                                                        |                                                                          |
-| ---------------------------------------------------------------------- | ------------------------------------------------------------------------ |
-| ![](../imágenes/casosUso/detallesCasosUsoEcuacionesUnaVariable/detalleCasoUsoResultadoFalsaPosición.svg) | [Código PUML](../casosDeUso/detallesCasosUsoEcuacionesUnaVariable/detalleCasoUsoResultadoFalsaPosición.puml) |
-
 #### - Abrir Método Steffensen
 
 |                                                                        |                                                                          |
@@ -277,13 +181,6 @@ Muestra como la Aplicación y la Librería retornan el resultado de la operació
 |                                                                        |                                                                          |
 | ---------------------------------------------------------------------- | ------------------------------------------------------------------------ |
 | ![](../imágenes/casosUso/detallesCasosUsoEcuacionesUnaVariable/detalleCasoUsoCrearSteffensen.svg) | [Código PUML](../casosDeUso/detallesCasosUsoEcuacionesUnaVariable/detalleCasoUsoCrearSteffensen.puml) |
-
-#### - Resultado Steffensen
-
-|                                                                        |                                                                          |
-| ---------------------------------------------------------------------- | ------------------------------------------------------------------------ |
-| ![](../imágenes/casosUso/detallesCasosUsoEcuacionesUnaVariable/detalleCasoUsoResultadoSteffensen.svg) | [Código PUML](../casosDeUso/detallesCasosUsoEcuacionesUnaVariable/detalleCasoUsoResultadoSteffensen.puml) |
-
 
 #### - Abrir Método Horner
 
@@ -297,12 +194,6 @@ Muestra como la Aplicación y la Librería retornan el resultado de la operació
 | ---------------------------------------------------------------------- | ------------------------------------------------------------------------ |
 | ![](../imágenes/casosUso/detallesCasosUsoEcuacionesUnaVariable/detalleCasoUsoCrearHorner.svg) | [Código PUML](../casosDeUso/detallesCasosUsoEcuacionesUnaVariable/detalleCasoUsoCrearHorner.puml) |
 
-#### - Resultado Horner
-
-|                                                                        |                                                                          |
-| ---------------------------------------------------------------------- | ------------------------------------------------------------------------ |
-| ![](../imágenes/casosUso/detallesCasosUsoEcuacionesUnaVariable/detalleCasoUsoResultadoHorner.svg) | [Código PUML](../casosDeUso/detallesCasosUsoEcuacionesUnaVariable/detalleCasoUsoResultadoHorner.puml) |
-
 #### - Abrir Método Müller
 
 |                                                                        |                                                                          |
@@ -314,12 +205,6 @@ Muestra como la Aplicación y la Librería retornan el resultado de la operació
 |                                                                        |                                                                          |
 | ---------------------------------------------------------------------- | ------------------------------------------------------------------------ |
 | ![](../imágenes/casosUso/detallesCasosUsoEcuacionesUnaVariable/detalleCasoUsoCrearMüller.svg) | [Código PUML](../casosDeUso/detallesCasosUsoEcuacionesUnaVariable/detalleCasoUsoCrearMüller.puml) |
-
-#### - Resultado Müller
-
-|                                                                        |                                                                          |
-| ---------------------------------------------------------------------- | ------------------------------------------------------------------------ |
-| ![](../imágenes/casosUso/detallesCasosUsoEcuacionesUnaVariable/detalleCasoUsoResultadoMüller.svg) | [Código PUML](../casosDeUso/detallesCasosUsoEcuacionesUnaVariable/detalleCasoUsoResultadoMüller.puml) |
 
 ---
 

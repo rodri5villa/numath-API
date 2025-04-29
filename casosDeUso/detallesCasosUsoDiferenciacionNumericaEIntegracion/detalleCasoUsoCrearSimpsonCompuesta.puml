@@ -1,5 +1,7 @@
 @startuml
 
+top to bottom direction
+
 skinparam state {
   BackgroundColor #faf4b4
   BorderColor #c90000
@@ -13,6 +15,7 @@ skinparam linetype polyline
 
 title Detalle Caso de Uso Crear Operación Simpson Compuesta
 
+state SIMPSON_COMPUESTA
 
 SIMPSON_COMPUESTA-[#green]-> crear_simpson_compuesta
 note on link
@@ -51,8 +54,8 @@ state crear_simpson_compuesta{
 
 }
 
-crear_simpson_compuesta-[#green]-> :abrirResultadoSimpsonCompuesta
+crear_simpson_compuesta-[#green]-> :calcularResultadoSimpsonCompuesta
 
-:abrirResultadoSimpsonCompuesta-[#green]-> RESULTADO_SIMPSON_COMPUESTA
+:calcularResultadoSimpsonCompuesta-[#green]-> SIMPSON_COMPUESTA
 
 @enduml

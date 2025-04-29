@@ -1,5 +1,7 @@
 @startuml
 
+top to bottom direction
+
 skinparam state {
   BackgroundColor #faf4b4
   BorderColor #c90000
@@ -13,6 +15,7 @@ skinparam linetype polyline
 
 title Detalle Caso de Uso Crear Operación Bisección
 
+state BISECCION
 
 BISECCION -[#green]-> crear_biseccion 
 note on link
@@ -51,8 +54,8 @@ state crear_biseccion {
   3 -[#green]-> [*]
 }
 
-crear_biseccion -[#green]-> :abrirResultadoBiseccion
+crear_biseccion -[#green]-> :calcularResultadoBiseccion
 
-:abrirResultadoBiseccion -[#green]-> RESULTADO_BISECCION
+:calcularResultadoBiseccion -[#green]-> BISECCION
 
 @enduml

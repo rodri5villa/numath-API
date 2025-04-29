@@ -1,5 +1,7 @@
 @startuml
 
+top to bottom direction
+
 skinparam state {
   BackgroundColor #faf4b4
   BorderColor #c90000
@@ -13,6 +15,7 @@ skinparam linetype polyline
 
 title Detalle Caso de Uso Crear Operación Horner
 
+state HORNER
 
 HORNER -[#green]-> crear_horner
 note on link
@@ -45,8 +48,8 @@ state crear_horner {
   3 -[#green]-> [*]
 }
 
-crear_horner -[#green]-> :abrirResultadoHorner
+crear_horner -[#green]-> :calcularResultadoHorner
 
-:abrirResultadoHorner -[#green]-> RESULTADO_HORNER
+:calcularResultadoHorner-[#green]-> HORNER
 
 @enduml

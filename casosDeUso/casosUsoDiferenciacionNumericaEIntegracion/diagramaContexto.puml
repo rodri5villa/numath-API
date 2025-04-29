@@ -44,15 +44,10 @@ note on link
   Listar Operaciones
 end note
 
-PUNTO_MEDIO_3_PUNTOS -D-> RESULTADO_PUNTO_MEDIO_3_PUNTOS
+PUNTO_MEDIO_3_PUNTOS -D-> PUNTO_MEDIO_3_PUNTOS
 note on link
-  Crear Operación Punto medio 
+  Crear Operación Punto medio 3 Puntos
 end note 
-
-RESULTADO_PUNTO_MEDIO_3_PUNTOS --> PUNTO_MEDIO_3_PUNTOS
-note on link
-  Devolver Resultado
-end note
 
 DIFERENCIACION_NUMERICA_E_INTEGRACION-d-> EXTREMO_3_PUNTOS
 note on link
@@ -64,15 +59,10 @@ note on link
   Listar Operaciones
 end note
 
-EXTREMO_3_PUNTOS -D-> RESULTADO_EXTREMO_3_PUNTOS
+EXTREMO_3_PUNTOS -D-> EXTREMO_3_PUNTOS
 note on link
-  Crear Operación Extremo 
+  Crear Operación Extremo 3 Puntos
 end note 
-
-RESULTADO_EXTREMO_3_PUNTOS --> EXTREMO_3_PUNTOS
-note on link
-  Devolver Resultado
-end note
 
 DIFERENCIACION_NUMERICA_E_INTEGRACION-d-> PUNTO_MEDIO_5_PUNTOS
 note on link
@@ -84,15 +74,10 @@ note on link
   Listar Operaciones
 end note
 
-PUNTO_MEDIO_5_PUNTOS -D-> RESULTADO_PUNTO_MEDIO_5_PUNTOS
+PUNTO_MEDIO_5_PUNTOS -D-> PUNTO_MEDIO_5_PUNTOS
 note on link
-  Crear Operación Punto Medio
+  Crear Operación Punto Medio 5 Puntos
 end note 
-
-RESULTADO_PUNTO_MEDIO_5_PUNTOS --> PUNTO_MEDIO_5_PUNTOS
-note on link
-  Devolver Resultado
-end note
 
 DIFERENCIACION_NUMERICA_E_INTEGRACION-d-> EXTREMO_5_PUNTOS
 note on link
@@ -104,15 +89,10 @@ note on link
   Listar Operaciones
 end note
 
-EXTREMO_5_PUNTOS -d-> RESULTADO_EXTREMO_5_PUNTOS
+EXTREMO_5_PUNTOS -d-> EXTREMO_5_PUNTOS
 note on link
-  Crear Operación Extremo
+  Crear Operación Extremo 5 Puntos
 end note 
-
-RESULTADO_EXTREMO_5_PUNTOS --> EXTREMO_5_PUNTOS
-note on link
-  Devolver Resultado
-end note
 
 DIFERENCIACION_NUMERICA_E_INTEGRACION-d-> PUNTO_MEDIO_2_DERIVADA
 note on link
@@ -124,15 +104,10 @@ note on link
   Listar Operaciones
 end note
 
-PUNTO_MEDIO_2_DERIVADA-D-> RESULTADO_PUNTO_MEDIO_2_DERIVADA
+PUNTO_MEDIO_2_DERIVADA-D-> PUNTO_MEDIO_2_DERIVADA
 note on link
-  Crear Operación Punto Medio
+  Crear Operación Punto Medio 2º Derivada
 end note 
-
-RESULTADO_PUNTO_MEDIO_2_DERIVADA --> PUNTO_MEDIO_2_DERIVADA
-note on link
-  Devolver Resultado
-end note
 
 DIFERENCIACION_NUMERICA_E_INTEGRACION-d-> NEWTON_COTES_C1
 note on link
@@ -144,15 +119,10 @@ note on link
   Listar Operaciones
 end note
 
-NEWTON_COTES_C1-D-> RESULTADO_NEWTON_COTES_C1
+NEWTON_COTES_C1-D-> NEWTON_COTES_C1
 note on link
-  Crear Operación n=1
+  Crear Operación Newton Cotes Cerrado n=1
 end note 
-
-RESULTADO_NEWTON_COTES_C1 --> NEWTON_COTES_C1
-note on link
-  Devolver Resultado
-end note
 
 DIFERENCIACION_NUMERICA_E_INTEGRACION-d-> NEWTON_COTES_C2
 note on link
@@ -164,15 +134,10 @@ note on link
   Listar Operaciones
 end note
 
-NEWTON_COTES_C2-D-> RESULTADO_NEWTON_COTES_C2
+NEWTON_COTES_C2-D-> NEWTON_COTES_C2
 note on link
-  Crear Operación n=2
+  Crear Operación Newton Cotes Cerrado n=2
 end note 
-
-RESULTADO_NEWTON_COTES_C2 --> NEWTON_COTES_C2
-note on link
-  Devolver Resultado
-end note
 
 DIFERENCIACION_NUMERICA_E_INTEGRACION-d-> NEWTON_COTES_C3
 note on link
@@ -184,15 +149,10 @@ note on link
   Listar Operaciones
 end note
 
-NEWTON_COTES_C3-D-> RESULTADO_NEWTON_COTES_C3
+NEWTON_COTES_C3-D-> NEWTON_COTES_C3
 note on link
-  Crear Operación n=3
+  Crear Operación Newton Cotes Cerrado n=3
 end note 
-
-RESULTADO_NEWTON_COTES_C3 --> NEWTON_COTES_C3
-note on link
-  Devolver Resultado
-end note
 
 DIFERENCIACION_NUMERICA_E_INTEGRACION-d-> NEWTON_COTES_C4
 note on link
@@ -204,15 +164,10 @@ note on link
   Listar Operaciones
 end note
 
-NEWTON_COTES_C4-D-> RESULTADO_NEWTON_COTES_C4
+NEWTON_COTES_C4-D-> NEWTON_COTES_C4
 note on link
-  Crear Operación n=4
+  Crear Operación Newton Cotes Cerrado n=4
 end note 
-
-RESULTADO_NEWTON_COTES_C4 --> NEWTON_COTES_C4
-note on link
-  Devolver Resultado
-end note
 
 DIFERENCIACION_NUMERICA_E_INTEGRACION-d-> NEWTON_COTES_A0
 note on link
@@ -224,15 +179,10 @@ note on link
   Listar Operaciones
 end note
 
-NEWTON_COTES_A0-D-> RESULTADO_NEWTON_COTES_A0
+NEWTON_COTES_A0-D-> NEWTON_COTES_A0
 note on link
-  Crear Operación n=0
+  Crear Operación Newton Cotes Abierto n=0
 end note 
-
-RESULTADO_NEWTON_COTES_A0 --> NEWTON_COTES_A0
-note on link
-  Devolver Resultado
-end note
 
 DIFERENCIACION_NUMERICA_E_INTEGRACION-d-> NEWTON_COTES_A1
 note on link
@@ -244,15 +194,10 @@ note on link
   Listar Operaciones
 end note
 
-NEWTON_COTES_A1-D-> RESULTADO_NEWTON_COTES_A1
+NEWTON_COTES_A1-D-> NEWTON_COTES_A1
 note on link
-  Crear Operación n=1
+  Crear Operación Newton Cotes Abierto n=1
 end note 
-
-RESULTADO_NEWTON_COTES_A1 --> NEWTON_COTES_A1
-note on link
-  Devolver Resultado
-end note
 
 DIFERENCIACION_NUMERICA_E_INTEGRACION-d-> NEWTON_COTES_A2
 note on link
@@ -264,15 +209,10 @@ note on link
   Listar Operaciones
 end note
 
-NEWTON_COTES_A2-D-> RESULTADO_NEWTON_COTES_A2
+NEWTON_COTES_A2-D-> NEWTON_COTES_A2
 note on link
-  Crear Operación n=2
+  Crear Operación Newton Cotes Abierto n=2
 end note 
-
-RESULTADO_NEWTON_COTES_A2 --> NEWTON_COTES_A2
-note on link
-  Devolver Resultado
-end note
 
 DIFERENCIACION_NUMERICA_E_INTEGRACION-d-> NEWTON_COTES_A3
 note on link
@@ -284,15 +224,10 @@ note on link
   Listar Operaciones
 end note
 
-NEWTON_COTES_A3-D-> RESULTADO_NEWTON_COTES_A3
+NEWTON_COTES_A3-D-> NEWTON_COTES_A3
 note on link
-  Crear Operación n=3
+  Crear Operación Newton Cotes Abierto n=3
 end note 
-
-RESULTADO_NEWTON_COTES_A3 --> NEWTON_COTES_A3
-note on link
-  Devolver Resultado
-end note
 
 DIFERENCIACION_NUMERICA_E_INTEGRACION-d-> SIMPSON_COMPUESTA
 note on link
@@ -304,15 +239,10 @@ note on link
   Listar Operaciones
 end note
 
-SIMPSON_COMPUESTA-D-> RESULTADO_SIMPSON_COMPUESTA
+SIMPSON_COMPUESTA-D-> SIMPSON_COMPUESTA
 note on link
   Crear Operación Simpson Compuesta
 end note 
-
-RESULTADO_SIMPSON_COMPUESTA --> SIMPSON_COMPUESTA
-note on link
-  Devolver Resultado
-end note
 
 DIFERENCIACION_NUMERICA_E_INTEGRACION-d-> TRAPEZOIDAL_COMPUESTA
 note on link
@@ -324,15 +254,10 @@ note on link
   Listar Operaciones
 end note
 
-TRAPEZOIDAL_COMPUESTA-D-> RESULTADO_TRAPEZOIDAL_COMPUESTA
+TRAPEZOIDAL_COMPUESTA-D-> TRAPEZOIDAL_COMPUESTA
 note on link
   Crear Operación Trapezoidal Compuesta
 end note 
-
-RESULTADO_TRAPEZOIDAL_COMPUESTA --> TRAPEZOIDAL_COMPUESTA
-note on link
-  Devolver Resultado
-end note
 
 DIFERENCIACION_NUMERICA_E_INTEGRACION-d-> PUNTO_MEDIO_COMPUESTA
 note on link
@@ -344,15 +269,11 @@ note on link
   Listar Operaciones
 end note
 
-PUNTO_MEDIO_COMPUESTA-D-> RESULTADO_PUNTO_MEDIO_COMPUESTA
+PUNTO_MEDIO_COMPUESTA-D-> PUNTO_MEDIO_COMPUESTA
 note on link
   Crear Operación Punto Medio Compuesta
 end note 
 
-RESULTADO_PUNTO_MEDIO_COMPUESTA --> PUNTO_MEDIO_COMPUESTA
-note on link
-  Devolver Resultado
-end note
 }
 
 WEB --> [*]
