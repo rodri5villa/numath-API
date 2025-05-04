@@ -1,0 +1,125 @@
+@startuml
+
+title Diagrama de Clases Librería Numath + API
+
+' Módulo __init__.py que contiene la función create_app()
+
+package "API" {
+  class __init__ {
+    +create_app() : Flask
+  }
+  
+  ' Módulo operaciones.py donde se define el blueprint y los endpoints
+  class ecuaciones_una_variable_controller {
+    +bisection_endpoint()
+    +fixed_point_endpoint()
+    +newton_endpoint()
+    +secant_endpoint()
+    +false_position_endpoint()
+    +steffensen_endpoint()
+    +horner_method()
+    +muller_endpoint()
+  }
+
+  ' Módulo operaciones.py donde se define el blueprint y los endpoints
+  class diferenciacion_numerica_e_integracion_controller{
+    + derivative_three_points_central_endpoint()
+    + derivative_three_points_border_endpoint()
+    + derivative_five_points_central_endpoint()
+    + derivative_five_points_border_endpoint()
+    + derivative_unified_endpoint()
+    + second_derivative_central_endpoint()
+    + second_derivative_central_data_endpoint()
+    + newton_cotes_n1_close_endpoint()
+    + newton_cotes_n2_close_endpoint()
+    + newton_cotes_n3_close_endpoint()
+    + newton_cotes_n4_close_endpoint()
+    + newton_cotes_n0_open_endpoint()
+    + newton_cotes_n1_open_endpoint()
+    + newton_cotes_n2_open_endpoint()
+    + newton_cotes_n3_open_endpoint()
+    + composite_simpson_rule_endpoint()
+    + composite_trapezoidal_rule_endpoint()
+    + composite_midpoint_rule_endpoint()
+  }
+
+}
+
+' Librería instalada vía pip: numath
+package "Librería: numath-Libary"{
+  package "numath" {
+  
+  ' init.py: Inicializa la librería
+  class init {
+  }
+
+  ' ecuaciones_una_variable.py: Contiene las funciones para cada método
+  class ecuaciones_una_variable{
+    + bisection(funcion, a, b, TOL, N0)
+    + fixed_point_iteration(funcion, p0, TOL, N0)
+    + newton_method(funcion, p0, TOL, N0, factor)
+    + secant_method(funcion, p0, p1, TOL, N0)
+    + false_position(funcion, p0, p1, TOL, N0) 
+    + steffensen_method(funcion, p0, TOL, N0) 
+    + horner_method(a, x0)
+    + muller_method(funcion, p0, p1, p2, TOL, N0)
+  }
+ 
+   ' diferenciacion_numerica_e_integracion.py: Contiene las funciones para cada método
+  class diferenciacion_numerica_e_integracion{
+    + derivative_three_points_central(funcion, x0, h)
+    + derivative_three_points_border(funcion, x0, h)
+    + derivative_five_points_central(funcion, x0, h)
+    + derivative_five_points_border(funcion, x0, h)
+    + derivative_unified(datos, x0)
+    + second_derivative_central(funcion, x0, h)
+    + second_derivative_central_data(datos, x0)
+    + newton_cotes_n1_close(funcion, a, b)
+    + newton_cotes_n2_close(funcion, a, b)
+    + newton_cotes_n3_close(funcion, a, b)
+    + newton_cotes_n4_close(funcion, a, b)
+    + newton_cotes_n0_open(funcion, a, b)
+    + newton_cotes_n1_open(funcion, a, b)
+    + newton_cotes_n2_open(funcion, a, b)
+    + newton_cotes_n3_open(funcion, a, b)
+    + composite_simpson_rule(funcion, a, b, n)
+    + composite_trapezoidal_rule(funcion, a, b, n)
+    + composite_midpoint_rule(funcion, a, b, n)
+  }
+
+
+  ' transformacion.py: Se encarga de transformar la cadena de la función a callable
+  class transformacion {
+    + reemplazar_funciones(funcion_entrada) : str
+    + crear_funcion(funcion_entrada) : callable
+  }
+  ' setup.py se encuentra fuera de la carpeta numath
+  
+}
+  class setup {
+    + parse_requirements(filename)
+    + setup()
+    ' Configura la instalación/paquete (setuptools.setup(...))
+  }
+
+}
+' Relaciones
+
+' Relacionamos los ficheros de la carpeta numath
+init --> ecuaciones_una_variable : "Inicializa la librería"
+init --> diferenciacion_numerica_e_integracion : "Inicializa la librería"
+ecuaciones_una_variable--> transformacion : "Transforma la función de entrada"
+diferenciacion_numerica_e_integracion --> transformacion : "Transforma la función de entrada"
+
+' setup.py se encarga de empaquetar la librería numath
+setup --> "numath" : "Empaqueta la librería"
+
+' La función create_app() crea una instancia de Flask y registra el blueprint definido en operaciones.py
+__init__ --> ecuaciones_una_variable_controller : "Registra una solicitud POST"
+__init__ --> diferenciacion_numerica_e_integracion_controller: "Registra una solicitud POST"
+
+' Los endpoints definidos en operaciones.py utilizan la librería numath para realizar los cálculos
+ecuaciones_una_variable_controller --> ecuaciones_una_variable : "LLama a métodos de la librería"
+diferenciacion_numerica_e_integracion_controller--> diferenciacion_numerica_e_integracion: "LLama a métodos de la librería"
+
+@enduml

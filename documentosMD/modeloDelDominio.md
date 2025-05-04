@@ -2,24 +2,24 @@
 
 ## - Diagrama de Clases
 
-El diagrama de clases muestra las entidades clave de la API + Librería numath
+El diagrama de clases muestra las entidades clave
 
 | ![Clases](/imágenes/modelosUML/diagramaClases.svg) | 
 |  :-----------------------------------------------: |
 |      [Código](/modelosUML/diagramaClases.puml)     |
 
-## - Diagrama de Estados
-
-El diagrama de estados ilustra los diferentes estados y transiciones en la aplicación de numath
-
- | ![Estados](/imágenes/modelosUML/diagramaEstados.svg) |
- |  :-------------------------------------------------: |
- |      [Código](/modelosUML/diagramaEstados.puml)      |
-
-## - Diagrama de Objetos
+## - Diagrama de Objetos de la Operación Bisección
 
 Este diagrama de objetos ilustra una instancia específica del proceso de realizar operación de bisección
 
-| ![Clases](/imágenes/modelosUML/diagramaObjetos.svg) |
+| ![Clases](/imágenes/modelosUML/diagramaObjetosBiseccion.svg) |
 | :-------------------------------------------------: |
-|     [Código](/modelosUML/diagramaObjetos.puml)      |
+|     [Código](/modelosUML/diagramaObjetosBiseccion.puml)      |
+
+## - Diagrama de Objetos de la Operación Regla de Simpson Compuesta
+
+Este diagrama de objetos ilustra una instancia específica del proceso de realizar operación de simpson compuesta
+
+| ![Clases](/imágenes/modelosUML/diagramaObjetosSimpsonCompuesta.svg) |
+| :-------------------------------------------------: |
+|     [Código](/modelosUML/diagramaObjertosSimpsonCompuesta.puml)      |

@@ -1,0 +1,25 @@
+@startuml
+
+skinparam packageBorderColor white
+skinparam packageBackgroundColor white
+
+title Diagrama de Objetos de la Operación Bisección
+
+package " " {
+  object "flask_app : API_1" as flask_app {
+    create_app() : Flask
+  }
+  
+  object "ecuaciones_una_variable_controller : bisección" as operaciones {
+    bisection_endpoint("x^2 - 4", 0, 3, 1e-5, 100)
+  }
+}
+
+node "Librería Numath" as PyLibrary {
+}
+
+flask_app -- operaciones: "Usuario solicita operación bisección >"
+operaciones -- PyLibrary : "LLama a >"
+operaciones -- flask_app : "Devuelve resultado >"
+
+@enduml

@@ -1,0 +1,25 @@
+@startuml
+
+skinparam packageBorderColor white
+skinparam packageBackgroundColor white
+
+title Diagrama de Objetos de la Operación Regla de Simpson Compuesta
+
+package " " {
+  object "flask_app : API_1" as flask_app {
+    create_app() : Flask
+  }
+  
+  object "diferenciacion_numerica_e_integracion_controller: regla de simpson compuesta" as operaciones {
+    composite_simpson_rule_endpoint("sin(x)", 0, math.pi, 100)  
+  }
+}
+
+node "Librería Numath" as PyLibrary {
+}
+
+flask_app -- operaciones: "Usuario solicita operación simpson compuesta >"
+operaciones -- PyLibrary : "LLama a >"
+operaciones -- flask_app : "Devuelve resultado >"
+
+@enduml
