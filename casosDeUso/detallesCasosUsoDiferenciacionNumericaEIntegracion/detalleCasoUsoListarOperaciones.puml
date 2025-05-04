@@ -116,6 +116,30 @@ note on link
   - Listar Operaciones
 end note
 
+INTEGRACION_ROMBERG-[#green]-> :listar_operaciones
+note on link
+  **Sistema requiere:**
+  - Listar Operaciones
+end note
+
+INTEGRAL_DOBLE_SIMPSON-[#green]-> :listar_operaciones
+note on link
+  **Sistema requiere:**
+  - Listar Operaciones
+end note
+
+INTEGRAL_DOBLE_GAUSSIANA-[#green]-> :listar_operaciones
+note on link
+  **Sistema requiere:**
+  - Listar Operaciones
+end note
+
+INTEGRAL_TRIPLE_GAUSSIANA-[#green]-> :listar_operaciones
+note on link
+  **Sistema requiere:**
+  - Listar Operaciones
+end note
+
 
 :listar_operaciones-[#green]-> DIFERENCIACION_NUMERICA_E_INTEGRACION
 

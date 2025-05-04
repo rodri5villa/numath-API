@@ -24,6 +24,10 @@ rectangle  {
     usecase "Abrir Regla Simpson Compuesta" as simpson
     usecase "Abrir Regla Trapezoidal Compuesta" as trapezoidal
     usecase "Abrir Regla Punto Medio Compuesta" as pmc
+    usecase "Abrir Integración de Romberg" as inr
+    usecase "Abrir Integral Doble de Simpson" as ids
+    usecase "Abrir Integral Doble Gaussiana" as idg
+    usecase "Abrir Integral Triple Gaussiana" as itg
 }
 
 user --> listarOper: ""
@@ -43,5 +47,9 @@ user --> nca3: ""
 user --> simpson: ""
 user --> trapezoidal: ""
 user --> pmc: ""
+user --> inr: ""
+user --> ids: ""
+user --> idg: ""
+user --> itg: ""
 
 @enduml
