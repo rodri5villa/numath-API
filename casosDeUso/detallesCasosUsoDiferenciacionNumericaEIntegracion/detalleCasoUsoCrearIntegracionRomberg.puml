@@ -1,0 +1,61 @@
+@startuml
+
+top to bottom direction
+
+skinparam state {
+  BackgroundColor #faf4b4
+  BorderColor #c90000
+}
+
+skinparam note {
+  BackgroundColor #f5f5f5
+}
+
+skinparam linetype polyline
+
+title Detalle Caso de Uso Crear Operación Integración de Romberg
+
+state INTEGRACION_ROMBERG
+
+INTEGRACION_ROMBERG-[#green]-> crear_integracion_romberg
+note on link
+  **Usuario solicita:**
+  - Crear operación integracion romberg
+end note
+
+state crear_integracion_romberg{
+  state 1 as " "
+  state 2 as " "
+  state 3 as " "
+  
+  [*] -[#green]-> 1
+  1 -[#green]-> 2
+  note on link
+      **Sistema requiere Parámetros:**
+      - funcion
+      - a
+      - b
+      - n
+  end note
+  2 -[#green]-> 3
+  note on link
+    **Usuario Proporciona Parámetros:**
+      - funcion
+      - a
+      - b
+      - n
+  end note
+  3 -[#red]-> 1
+  note on link
+    [Parámetros 
+      Inválidos]
+  end note
+  3 -[#green]-> [*]
+
+}
+
+crear_integracion_romberg-[#green]-> :calcularResultadoIntegracionRomberg
+
+:calcularResultadoIntegracionRomberg-[#green]-> INTEGRACION_ROMBERG
+
+@enduml

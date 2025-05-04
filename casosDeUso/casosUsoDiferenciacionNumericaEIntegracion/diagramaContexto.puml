@@ -14,6 +14,7 @@ note on link
 end note
 
 State WEB {
+
 [*] --> ESTADO_PRINCIPAL
 note on link
   Listar Módulos  
@@ -274,6 +275,65 @@ note on link
   Crear Operación Punto Medio Compuesta
 end note 
 
+DIFERENCIACION_NUMERICA_E_INTEGRACION-d-> INTEGRACION_ROMBERG
+note on link
+  Abrir Integración de Romberg
+end note 
+
+INTEGRACION_ROMBERG-d-> DIFERENCIACION_NUMERICA_E_INTEGRACION
+note on link
+  Listar Operaciones
+end note
+
+INTEGRACION_ROMBERG-D-> INTEGRACION_ROMBERG
+note on link
+  Crear Operación Integración de Romberg
+end note 
+
+DIFERENCIACION_NUMERICA_E_INTEGRACION-d-> INTEGRAL_DOBLE_SIMPSON
+note on link
+  Abrir Integral Doble de Simpson
+end note 
+
+INTEGRAL_DOBLE_SIMPSON-d-> DIFERENCIACION_NUMERICA_E_INTEGRACION
+note on link
+  Listar Operaciones
+end note
+
+INTEGRAL_DOBLE_SIMPSON-D-> INTEGRAL_DOBLE_SIMPSON
+note on link
+  Crear Operación Integral Doble de Simpson
+end note 
+
+DIFERENCIACION_NUMERICA_E_INTEGRACION-d-> INTEGRAL_DOBLE_GAUSSIANA
+note on link
+  Abrir Integral Doble Gaussiana
+end note 
+
+INTEGRAL_DOBLE_GAUSSIANA-d-> DIFERENCIACION_NUMERICA_E_INTEGRACION
+note on link
+  Listar Operaciones
+end note
+
+INTEGRAL_DOBLE_GAUSSIANA-D-> INTEGRAL_DOBLE_GAUSSIANA
+note on link
+  Crear Operación Integral Doble Gaussiana
+end note 
+
+DIFERENCIACION_NUMERICA_E_INTEGRACION-d-> INTEGRAL_TRIPLE_GAUSSIANA
+note on link
+  Abrir Integral Triple Gaussiana
+end note 
+
+INTEGRAL_TRIPLE_GAUSSIANA-d-> DIFERENCIACION_NUMERICA_E_INTEGRACION
+note on link
+  Listar Operaciones
+end note
+
+INTEGRAL_TRIPLE_GAUSSIANA-D-> INTEGRAL_TRIPLE_GAUSSIANA
+note on link
+  Crear Operación Integral Triple Gaussiana
+end note 
 }
 
 WEB --> [*]

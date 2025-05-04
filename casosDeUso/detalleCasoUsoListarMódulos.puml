@@ -26,6 +26,12 @@ note on link
   - Listar Módulos
 end note
 
+DIFERENCIACION_NUMERICA_E_INTEGRACION-[#green]-> :listar_modulos
+note on link
+  **Sisteme requiere:**
+  - Listar Módulos
+end note
+
 :listar_modulos-[#green]-> ESTADO_PRINCIPAL
 
 @enduml

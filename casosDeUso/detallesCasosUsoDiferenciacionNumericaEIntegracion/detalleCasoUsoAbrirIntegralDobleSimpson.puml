@@ -1,0 +1,47 @@
+@startuml
+
+skinparam state {
+  BackgroundColor #faf4b4
+  BorderColor #c90000
+}
+
+skinparam note {
+  BackgroundColor #f5f5f5
+}
+
+skinparam linetype polyline
+
+title Detalle Caso de Uso Abrir Integral Doble de Simpson
+
+
+DIFERENCIACION_NUMERICA_E_INTEGRACION-[#green]-> abrir_integral_doble_simpson
+note on link
+  **Usuario solicita:**
+  - Abrir Integral Doble de Simpson
+end note
+
+state abrir_integral_doble_simpson{
+  state 1 as " "
+  state 2 as " "
+  state 3 as " "
+  
+  [*] -[#green]-> 1
+  1 -[#green]-> 2
+  note on link
+      **Sistema requiere:**
+      - Método integral doble simpson conocido
+  end note
+  2 -[#green]-> 3
+  note on link
+    **Usuario Selecciona:**
+    - Método integral doble simpson conocido
+  end note
+ 
+  3 -[#green]-> [*]
+}
+
+abrir_integral_doble_simpson-[#green]-> :abrirIntegralDobleSimpson
+
+:abrirIntegralDobleSimpson-[#green]-> INTEGRAL_DOBLE_SIMPSON
+
+@enduml

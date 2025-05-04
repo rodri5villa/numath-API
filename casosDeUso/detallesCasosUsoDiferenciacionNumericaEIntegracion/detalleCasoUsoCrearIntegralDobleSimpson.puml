@@ -1,0 +1,67 @@
+@startuml
+
+top to bottom direction
+
+skinparam state {
+  BackgroundColor #faf4b4
+  BorderColor #c90000
+}
+
+skinparam note {
+  BackgroundColor #f5f5f5
+}
+
+skinparam linetype polyline
+
+title Detalle Caso de Uso Crear Operación Integral Doble de Simpson
+
+state INTEGRAL_DOBLE_SIMPSON
+
+INTEGRAL_DOBLE_SIMPSON-[#green]-> crear_integral_doble_simpson
+note on link
+  **Usuario solicita:**
+  - Crear operación integral doble simpson
+end note
+
+state crear_integral_doble_simpson{
+  state 1 as " "
+  state 2 as " "
+  state 3 as " "
+  
+  [*] -[#green]-> 1
+  1 -[#green]-> 2
+  note on link
+      **Sistema requiere Parámetros:**
+      - funcion
+      - a
+      - b
+      - c_func
+      - d_func
+      - n
+      - m
+  end note
+  2 -[#green]-> 3
+  note on link
+    **Usuario Proporciona Parámetros:**
+      - funcion
+      - a
+      - b
+      - c_func
+      - d_func
+      - n
+      - m
+  end note
+  3 -[#red]-> 1
+  note on link
+    [Parámetros 
+      Inválidos]
+  end note
+  3 -[#green]-> [*]
+
+}
+
+crear_integral_doble_simpson-[#green]-> :calcularResultadoIntegralDobleSimpson
+
+:calcularResultadoIntegralDobleSimpson-[#green]-> INTEGRAL_DOBLE_SIMPSON
+
+@enduml
