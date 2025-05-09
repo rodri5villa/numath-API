@@ -8,10 +8,10 @@ def resolver_biseccion():
     try:
         data = request.get_json()
         funcion = data['funcion']
-        a = float(data['a'])
-        b = float(data['b'])
-        tol = float(data.get('TOL', 1e-5))
-        n0 = int(data.get('N0', 100))
+        a = data['a']
+        b = data['b']
+        tol = data.get('TOL', 1e-5)
+        n0 = data.get('N0', 100)
 
         resultado, iteraciones = na.bisection(funcion, a, b, tol, n0)
 

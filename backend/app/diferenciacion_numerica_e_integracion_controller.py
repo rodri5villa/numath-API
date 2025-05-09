@@ -8,8 +8,8 @@ def derivada_tres_puntos():
     try:
         data = request.get_json()
         funcion = data['funcion']
-        x0 = float(data['x0'])
-        h = float(data['h'])
+        x0 = data['x0']
+        h = data['h']
 
         resultado = na.derivative_three_points_central(funcion, x0, h)
 
