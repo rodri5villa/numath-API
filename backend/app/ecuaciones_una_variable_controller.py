@@ -25,9 +25,9 @@ def resolver_punto_fijo():
     try:
         data = request.get_json()
         funcion = data['funcion']
-        p0 = float(data['p0'])
-        tol = float(data.get('TOL', 1e-5))
-        n0 = int(data.get('N0', 100))
+        p0 = data['p0']
+        tol = data.get('TOL', 1e-5)
+        n0 = data.get('N0', 100)
 
         resultado, iteraciones = na.fixed_point_iteration(funcion, p0, tol, n0)
 
@@ -41,9 +41,9 @@ def resolver_newton():
     try:
         data = request.get_json()
         funcion = data['funcion']
-        p0 = float(data['p0'])
-        tol = float(data.get('TOL', 1e-5))
-        n0 = int(data.get('N0', 100))
+        p0 = data['p0']
+        tol = data.get('TOL', 1e-5)
+        n0 = data.get('N0', 100)
 
         resultado, iteraciones = na.newton_method(funcion, p0, tol, n0)
 
@@ -57,10 +57,10 @@ def resolver_secante():
     try:
         data = request.get_json()
         funcion = data['funcion']
-        p0 = float(data['p0'])
-        p1 = float(data['p1'])
-        tol = float(data.get('TOL', 1e-5))
-        n0 = int(data.get('N0', 100))
+        p0 = data['p0']
+        p1 = data['p1']
+        tol = data.get('TOL', 1e-5)
+        n0 = data.get('N0', 100)
 
         resultado, iteraciones = na.secant_method(funcion, p0, p1, tol, n0)
 
@@ -74,10 +74,10 @@ def resolver_posicion_falsa():
     try:
         data = request.get_json()
         funcion = data['funcion']
-        p0 = float(data['p0'])
-        p1 = float(data['p1'])
-        tol = float(data.get('TOL', 1e-5))
-        n0 = int(data.get('N0', 100))
+        p0 = data['p0']
+        p1 = data['p1']
+        tol = data.get('TOL', 1e-5)
+        n0 = data.get('N0', 100)
 
         resultado, iteraciones = na.false_position(funcion, p0, p1, tol, n0)
 
@@ -91,9 +91,9 @@ def resolver_steffensen():
     try:
         data = request.get_json()
         funcion = data['funcion']
-        p0 = float(data['p0'])
-        tol = float(data.get('TOL', 1e-5))
-        n0 = int(data.get('N0', 100))
+        p0 = data['p0']
+        tol = data.get('TOL', 1e-5)
+        n0 = data.get('N0', 100)
 
         resultado, iteraciones = na.steffensen_method(funcion, p0, tol, n0)
 
@@ -107,7 +107,7 @@ def resolver_horner():
     try:
         data = request.get_json()
         coeficientes = data['coeficientes']  # lista de coeficientes
-        x0 = float(data['x0'])
+        x0 = data['x0']
 
         resultado, derivada = na.horner_method(coeficientes, x0)
 
@@ -121,11 +121,11 @@ def resolver_muller():
     try:
         data = request.get_json()
         funcion = data['funcion']
-        p0 = float(data['p0'])
-        p1 = float(data['p1'])
-        p2 = float(data['p2'])
-        tol = float(data.get('TOL', 1e-5))
-        n0 = int(data.get('N0', 100))
+        p0 = data['p0']
+        p1 = data['p1']
+        p2 = data['p2']
+        tol = data.get('TOL', 1e-5)
+        n0 = data.get('N0', 100)
 
         resultado = na.muller_method(funcion, p0, p1, p2, tol, n0)
 

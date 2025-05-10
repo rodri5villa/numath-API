@@ -11,7 +11,7 @@ package " " {
   }
   
   object "diferenciacion_numerica_e_integracion_controller: regla de simpson compuesta" as operaciones {
-    composite_simpson_rule_endpoint("sin(x)", 0, math.pi, 100)  
+    composite_simpson_rule_endpoint("sin(x)", "0", "pi", "100")  
   }
 }
 
