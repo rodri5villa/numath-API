@@ -15,7 +15,7 @@ def resolver_biseccion():
 
         resultado, iteraciones = na.bisection(funcion, a, b, tol, n0)
 
-        return jsonify({"resultado": resultado, "iteraciones": iteraciones})
+        return jsonify({"resultado": resultado})
 
     except Exception as e:
         return jsonify({"error": str(e)}), 400
@@ -31,7 +31,7 @@ def resolver_punto_fijo():
 
         resultado, iteraciones = na.fixed_point_iteration(funcion, p0, tol, n0)
 
-        return jsonify({"resultado": resultado, "iteraciones": iteraciones})
+        return jsonify({"resultado": resultado})
     
     except Exception as e:
         return jsonify({"error": str(e)}), 400
@@ -47,7 +47,7 @@ def resolver_newton():
 
         resultado, iteraciones = na.newton_method(funcion, p0, tol, n0)
 
-        return jsonify({"resultado": resultado, "iteraciones": iteraciones})
+        return jsonify({"resultado": resultado})
     
     except Exception as e:
         return jsonify({"error": str(e)}), 400
@@ -64,7 +64,7 @@ def resolver_secante():
 
         resultado, iteraciones = na.secant_method(funcion, p0, p1, tol, n0)
 
-        return jsonify({"resultado": resultado, "iteraciones": iteraciones})
+        return jsonify({"resultado": resultado})
     
     except Exception as e:
         return jsonify({"error": str(e)}), 400
@@ -81,7 +81,7 @@ def resolver_posicion_falsa():
 
         resultado, iteraciones = na.false_position(funcion, p0, p1, tol, n0)
 
-        return jsonify({"resultado": resultado, "iteraciones": iteraciones})
+        return jsonify({"resultado": resultado})
     
     except Exception as e:
         return jsonify({"error": str(e)}), 400
@@ -97,7 +97,7 @@ def resolver_steffensen():
 
         resultado, iteraciones = na.steffensen_method(funcion, p0, tol, n0)
 
-        return jsonify({"resultado": resultado, "iteraciones": iteraciones})
+        return jsonify({"resultado": resultado})
     
     except Exception as e:
         return jsonify({"error": str(e)}), 400

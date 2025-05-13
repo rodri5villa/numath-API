@@ -53,7 +53,6 @@ const Home = () => {
           Bienvenido a Numath
         </h1>
 
-        {/* Texto de bienvenida bonito */}
         <div className="text-center text-gray-600 text-lg mb-12 max-w-2xl mx-auto space-y-3">
           <p>
             Numath es una plataforma de cálculo numérico que ofrece múltiples métodos
