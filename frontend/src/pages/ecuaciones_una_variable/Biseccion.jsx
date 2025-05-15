@@ -53,23 +53,24 @@ const Biseccion = () => {
     <div className="min-h-screen bg-gray-50 py-10 px-6">
         <div className="max-w-4xl mx-auto space-y-10">
             <h1 className="text-4xl font-bold text-center text-gray-800 mb-6">
-                Método de Bisección
+                Bisección
             </h1>
 
             {/* Explicación */}
             <div className="text-gray-700 space-y-5 text-base">
                 <div className="space-y-3">
                     <p>
-                        El método de bisección es un algoritmo de búsqueda de raíces que
-                        divide repetidamente un intervalo a la mitad para encontrar una raíz
-                        de una función continua.
+                       El <strong>método de bisección</strong> es un método numérico para encontrar la raíz de una función continua de forma aproximada. Se basa en el teorema del valor 
+                       intermedio, el cual establece que si una función <code className="bg-gray-200 px-1 rounded">f(x)</code> es continua en un intervalo 
+                       <code className="bg-gray-200 px-1 rounded">[a, b]</code> y <code className="bg-gray-200 px-1 rounded">f(a)</code> y 
+                       <code className="bg-gray-200 px-1 rounded">f(b)</code> tienen signos opuestos, entonces existe al menos un punto 
+                       <code className="bg-gray-200 px-1 rounded">c</code> en <code className="bg-gray-200 px-1 rounded">[a, b]</code> tal que 
+                       <code className="bg-gray-200 px-1 rounded">f(c) = 0</code>.
                     </p>
                     <p className="text-2xl font-bold">¿Cómo introducir la función y los parámetros?</p>
 
                     <p>
-                        Usa la variable <code className="bg-gray-200 px-1 rounded">x</code> para definir la función.  
-                        Ejemplo: <code className="bg-gray-200 px-1 rounded">x**3 - x - 2</code>.
-                    
+                        Usa la variable <code className="bg-gray-200 px-1 rounded">x</code> para definir la función.                     
                         Puedes utilizar operaciones básicas como: 
                         <code className="bg-gray-200 px-1 rounded">+</code>, 
                         <code className="bg-gray-200 px-1 rounded">-</code>, 
@@ -140,7 +141,7 @@ const Biseccion = () => {
                                 setFuncion(value);
                             }
                             }}
-                            placeholder="Ej: x**2 - 2"
+                            placeholder="Ej: x^2 - 2"
                             className="w-full border border-gray-300 rounded-md p-2"
                             required
                         />
