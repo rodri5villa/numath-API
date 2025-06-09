@@ -6,8 +6,8 @@ skinparam packageBackgroundColor white
 title Diagrama de Objetos de la Operación Regla de Simpson Compuesta
 
 package " " {
-  object "flask_app : API_1" as flask_app {
-    create_app() : Flask
+  object "aplicación: numath_API" as flask_app {
+    create_app() : numath_API
   }
   
   object "diferenciacion_numerica_e_integracion_controller: regla de simpson compuesta" as operaciones {

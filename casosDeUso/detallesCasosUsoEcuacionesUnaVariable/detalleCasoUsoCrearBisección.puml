@@ -19,7 +19,7 @@ state BISECCION
 
 BISECCION -[#green]-> crear_biseccion 
 note on link
-  **Usuario solicita:**
+  **Cliente solicita:**
   - Crear operación bisección
 end note
 
@@ -40,7 +40,7 @@ state crear_biseccion {
   end note
   2 -[#green]-> 3
   note on link
-    **Usuario Proporciona Parámetros:**
+    **Cliente Proporciona Parámetros:**
       - funcion
       - a
       - b

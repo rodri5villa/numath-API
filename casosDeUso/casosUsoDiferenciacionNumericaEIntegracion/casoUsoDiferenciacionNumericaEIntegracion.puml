@@ -4,10 +4,9 @@ title Caso de Uso Diferenciación Numérica e Integración
 
 left to right direction
 
-actor Usuario as user
+actor Cliente as user
 
 rectangle  {
-    usecase "Listar Operaciones" as listarOper
     usecase "Abrir Punto Medio de 3 Puntos" as pm3
     usecase "Abrir Extremo de 3 Puntos" as ex3
     usecase "Abrir Punto Medio de 5 Puntos" as pm5
@@ -30,7 +29,6 @@ rectangle  {
     usecase "Abrir Integral Triple Gaussiana" as itg
 }
 
-user --> listarOper: ""
 user --> pm3: ""
 user --> ex3: ""
 user --> pm5: ""

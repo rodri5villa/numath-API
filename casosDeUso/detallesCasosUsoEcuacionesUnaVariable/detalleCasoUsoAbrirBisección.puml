@@ -16,7 +16,7 @@ title Detalle Caso de Uso Abrir Método Bisección
 
 ECUACIONES_UNA_VARIABLE -[#green]-> abrir_biseccion
 note on link
-  **Usuario solicita:**
+  **Cliente solicita:**
   - Abrir Método Bisección
 end note
 
@@ -33,7 +33,7 @@ state abrir_biseccion{
   end note
   2 -[#green]-> 3
   note on link
-    **Usuario Selecciona:**
+    **Cliente Selecciona:**
     - Método bisección conocido
   end note
  

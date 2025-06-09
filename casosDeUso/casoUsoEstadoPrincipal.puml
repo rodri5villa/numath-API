@@ -4,10 +4,10 @@ title Caso de Uso Estado Principal
 
 left to right direction
 
-actor Usuario as user
+actor Cliente as user
 
 rectangle  {
-    usecase "Listar Módulos" as listarMod
+    usecase "Listar Módulos y Operaciones" as listarMod
 }
 
 user --> listarMod: ""

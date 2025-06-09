@@ -7,18 +7,19 @@
 3. [Casos de Uso Módulo Diferenciación Numérica e Integración](#casos-de-uso-módulo-diferenciación-numérica-e-integración)
 4. [Detalles de los Casos de Uso Módulo Ecuaciones Una Variable](#detalles-de-los-casos-de-uso-módulo-ecuaciones-una-variable)
 5. [Detalles de los Casos de Uso Módulo Diferenciación Numérica e Integración](#detalles-de-los-casos-de-uso-módulo-diferenciación-numérica-e-integración)
-6. [Diagrama de Contexto Módulo Ecuaciones Una Variable](#diagrama-de-contexto-módulo-ecuaciones-una-variable)
-7. [Diagrama de Contexto Módulo Diferenciación Numérica e Integración](#diagrama-de-contexto-módulo-diferenciación-numérica-e-integración)
+6. [Diegrama de Contexto General](#diagrama-de-contexto-general)
+7. [Diagrama de Contexto Módulo Ecuaciones Una Variable](#diagrama-de-contexto-módulo-ecuaciones-una-variable)
+8. [Diagrama de Contexto Módulo Diferenciación Numérica e Integración](#diagrama-de-contexto-módulo-diferenciación-numérica-e-integración)
 
 ## Actores
 
-- Usuario
+- Cliente
 
 ## Casos de Uso
 
 #### - Estado Principal
 
-Permite al usuario listar módulos.
+Permite al cliente listar módulos y operaciones.
 
 |                                                        |                                                          |
 | ------------------------------------------------------ | -------------------------------------------------------- |
@@ -28,7 +29,7 @@ Permite al usuario listar módulos.
 
 #### - Ecuaciones Una Variable
 
-Ofrece opciones para listar las operaciones y permite abrir la operación que queremos realizar.
+Permite abrir la operación que queremos realizar.
 
 |                                                              |                                                                |
 | ------------------------------------------------------------ | -------------------------------------------------------------- |
@@ -104,7 +105,7 @@ Ofrece la opción de crear una operación de müller.
 
 #### - Diferenciación Numérica e Integración
 
-Ofrece opciones para listar las operaciones y permite abrir la operación que queremos realizar.
+Permite abrir la operación que queremos realizar.
 
 |                                                              |                                                                |
 | ------------------------------------------------------------ | -------------------------------------------------------------- |
@@ -275,19 +276,7 @@ Ofrece la opción de crear una operación de integral triple gaussiana.
 
 ## Detalles de los Casos de Uso
 
-#### - Listar Módulos
-
-|                                                                        |                                                                          |
-| ---------------------------------------------------------------------- | ------------------------------------------------------------------------ |
-| ![](../imágenes/casosUso/detalleCasoUsoListarMódulos.svg) | [Código PUML](../casosDeUso/detalleCasoUsoListarMódulos.puml) |
-
 ### Detalles de los Casos de Uso Módulo Ecuaciones Una Variable
-
-#### - Listar Operaciones
-
-|                                                                        |                                                                          |
-| ---------------------------------------------------------------------- | ------------------------------------------------------------------------ |
-| ![](../imágenes/casosUso/detallesCasosUsoEcuacionesUnaVariable/detalleCasoUsoListarOperaciones.svg) | [Código PUML](../casosDeUso/detallesCasosUsoEcuacionesUnaVariable/detalleCasoUsoListarOperaciones.puml) |
 
 #### - Abrir Método Bisección
 
@@ -388,12 +377,6 @@ Ofrece la opción de crear una operación de integral triple gaussiana.
 ---
 
 ### Detalles de los Casos de Uso Módulo Diferenciación Numérica e Integración
-
-#### - Listar Operaciones
-
-|                                                                        |                                                                          |
-| ---------------------------------------------------------------------- | ------------------------------------------------------------------------ |
-| ![](../imágenes/casosUso/detallesCasosUsoDiferenciacionNumericaEIntegracion/detalleCasoUsoListarOperaciones.svg) | [Código PUML](../casosDeUso/detallesCasosUsoDiferenciacionNumericaEIntegracion/detalleCasoUsoListarOperaciones.puml) |
 
 #### - Abrir Punto Medio de 3 Puntos
 
@@ -638,6 +621,14 @@ Ofrece la opción de crear una operación de integral triple gaussiana.
 ---
 
 ## Diagramas de Contexto
+
+### Diagrama de Contexto General
+
+|                                                    |                                                    |
+| -------------------------------------------------- | -------------------------------------------------- |
+| ![](../imágenes/casosUso/diagramaContextoGeneral.svg) | [Código PUML](../casosDeUso/diagramaContextoGeneral.puml) |
+
+---
 
 ### Diagrama de Contexto Módulo Ecuaciones Una Variable
 

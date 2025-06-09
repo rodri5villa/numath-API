@@ -4,10 +4,9 @@ title Caso de Uso Ecuaciones de Una Variable
 
 left to right direction
 
-actor Usuario as user
+actor Cliente as user
 
 rectangle  {
-    usecase "Listar Operaciones" as listarOper
     usecase "Abrir Método Bisección" as bisection
     usecase "Abrir Método Punto Fijo" as fixedPoint
     usecase "Abrir Método Newton" as newton
@@ -18,7 +17,6 @@ rectangle  {
     usecase "Abrir Método Müller" as müller
 }
 
-user --> listarOper: ""
 user --> bisection: ""
 user --> fixedPoint: ""
 user --> newton: ""

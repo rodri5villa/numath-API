@@ -6,7 +6,6 @@ skinparam packageBackgroundColor white
 
 package " " {
   class __init__ {
-    +create_app() : Flask
   }
 
   class ecuaciones_una_variable_controller {

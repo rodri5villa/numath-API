@@ -15,24 +15,9 @@ end note
 
 State WEB {
 
-[*] --> ESTADO_PRINCIPAL
+[*] --> DIFERENCIACION_NUMERICA_E_INTEGRACION
 note on link
-  Listar Módulos  
-end note
-
-ESTADO_PRINCIPAL -R-> OTROS_MODULOS
-note on link
-  Listar Operaciones  
-end note
-
-ESTADO_PRINCIPAL --> DIFERENCIACION_NUMERICA_E_INTEGRACION
-note on link
-  Listar Operaciones  
-end note
-
-DIFERENCIACION_NUMERICA_E_INTEGRACION-d-> ESTADO_PRINCIPAL
-note on link
-  Listar Módulos
+  Listar Módulos y Operaciones  
 end note
 
 DIFERENCIACION_NUMERICA_E_INTEGRACION-d-> PUNTO_MEDIO_3_PUNTOS
@@ -42,7 +27,7 @@ end note
 
 PUNTO_MEDIO_3_PUNTOS -d-> DIFERENCIACION_NUMERICA_E_INTEGRACION
 note on link
-  Listar Operaciones
+  Listar Módulos y Operaciones  
 end note
 
 PUNTO_MEDIO_3_PUNTOS -D-> PUNTO_MEDIO_3_PUNTOS
@@ -57,7 +42,7 @@ end note
 
 EXTREMO_3_PUNTOS -d-> DIFERENCIACION_NUMERICA_E_INTEGRACION
 note on link
-  Listar Operaciones
+  Listar Módulos y Operaciones
 end note
 
 EXTREMO_3_PUNTOS -D-> EXTREMO_3_PUNTOS
@@ -72,7 +57,7 @@ end note
 
 PUNTO_MEDIO_5_PUNTOS -d-> DIFERENCIACION_NUMERICA_E_INTEGRACION
 note on link
-  Listar Operaciones
+  Listar Módulos y Operaciones
 end note
 
 PUNTO_MEDIO_5_PUNTOS -D-> PUNTO_MEDIO_5_PUNTOS
@@ -87,7 +72,7 @@ end note
 
 EXTREMO_5_PUNTOS -d-> DIFERENCIACION_NUMERICA_E_INTEGRACION
 note on link
-  Listar Operaciones
+  Listar Módulos y Operaciones
 end note
 
 EXTREMO_5_PUNTOS -d-> EXTREMO_5_PUNTOS
@@ -102,7 +87,7 @@ end note
 
 PUNTO_MEDIO_2_DERIVADA -d-> DIFERENCIACION_NUMERICA_E_INTEGRACION
 note on link
-  Listar Operaciones
+  Listar Módulos y Operaciones
 end note
 
 PUNTO_MEDIO_2_DERIVADA-D-> PUNTO_MEDIO_2_DERIVADA
@@ -117,7 +102,7 @@ end note
 
 NEWTON_COTES_C1-d-> DIFERENCIACION_NUMERICA_E_INTEGRACION
 note on link
-  Listar Operaciones
+  Listar Módulos y Operaciones
 end note
 
 NEWTON_COTES_C1-D-> NEWTON_COTES_C1
@@ -132,7 +117,7 @@ end note
 
 NEWTON_COTES_C2-d-> DIFERENCIACION_NUMERICA_E_INTEGRACION
 note on link
-  Listar Operaciones
+  Listar Módulos y Operaciones
 end note
 
 NEWTON_COTES_C2-D-> NEWTON_COTES_C2
@@ -147,7 +132,7 @@ end note
 
 NEWTON_COTES_C3-d-> DIFERENCIACION_NUMERICA_E_INTEGRACION
 note on link
-  Listar Operaciones
+  Listar Módulos y Operaciones
 end note
 
 NEWTON_COTES_C3-D-> NEWTON_COTES_C3
@@ -162,7 +147,7 @@ end note
 
 NEWTON_COTES_C4-d-> DIFERENCIACION_NUMERICA_E_INTEGRACION
 note on link
-  Listar Operaciones
+  Listar Módulos y Operaciones
 end note
 
 NEWTON_COTES_C4-D-> NEWTON_COTES_C4
@@ -177,7 +162,7 @@ end note
 
 NEWTON_COTES_A0 -d-> DIFERENCIACION_NUMERICA_E_INTEGRACION
 note on link
-  Listar Operaciones
+  Listar Módulos y Operaciones
 end note
 
 NEWTON_COTES_A0-D-> NEWTON_COTES_A0
@@ -192,7 +177,7 @@ end note
 
 NEWTON_COTES_A1-d-> DIFERENCIACION_NUMERICA_E_INTEGRACION
 note on link
-  Listar Operaciones
+  Listar Módulos y Operaciones
 end note
 
 NEWTON_COTES_A1-D-> NEWTON_COTES_A1
@@ -207,7 +192,7 @@ end note
 
 NEWTON_COTES_A2-d-> DIFERENCIACION_NUMERICA_E_INTEGRACION
 note on link
-  Listar Operaciones
+  Listar Módulos y Operaciones
 end note
 
 NEWTON_COTES_A2-D-> NEWTON_COTES_A2
@@ -222,7 +207,7 @@ end note
 
 NEWTON_COTES_A3-d-> DIFERENCIACION_NUMERICA_E_INTEGRACION
 note on link
-  Listar Operaciones
+  Listar Módulos y Operaciones
 end note
 
 NEWTON_COTES_A3-D-> NEWTON_COTES_A3
@@ -237,7 +222,7 @@ end note
 
 SIMPSON_COMPUESTA-d-> DIFERENCIACION_NUMERICA_E_INTEGRACION
 note on link
-  Listar Operaciones
+  Listar Módulos y Operaciones
 end note
 
 SIMPSON_COMPUESTA-D-> SIMPSON_COMPUESTA
@@ -252,7 +237,7 @@ end note
 
 TRAPEZOIDAL_COMPUESTA-d-> DIFERENCIACION_NUMERICA_E_INTEGRACION
 note on link
-  Listar Operaciones
+  Listar Módulos y Operaciones
 end note
 
 TRAPEZOIDAL_COMPUESTA-D-> TRAPEZOIDAL_COMPUESTA
@@ -267,7 +252,7 @@ end note
 
 PUNTO_MEDIO_COMPUESTA-d-> DIFERENCIACION_NUMERICA_E_INTEGRACION
 note on link
-  Listar Operaciones
+  Listar Módulos y Operaciones
 end note
 
 PUNTO_MEDIO_COMPUESTA-D-> PUNTO_MEDIO_COMPUESTA
@@ -282,7 +267,7 @@ end note
 
 INTEGRACION_ROMBERG-d-> DIFERENCIACION_NUMERICA_E_INTEGRACION
 note on link
-  Listar Operaciones
+  Listar Módulos y Operaciones
 end note
 
 INTEGRACION_ROMBERG-D-> INTEGRACION_ROMBERG
@@ -297,7 +282,7 @@ end note
 
 INTEGRAL_DOBLE_SIMPSON-d-> DIFERENCIACION_NUMERICA_E_INTEGRACION
 note on link
-  Listar Operaciones
+  Listar Módulos y Operaciones
 end note
 
 INTEGRAL_DOBLE_SIMPSON-D-> INTEGRAL_DOBLE_SIMPSON
@@ -312,7 +297,7 @@ end note
 
 INTEGRAL_DOBLE_GAUSSIANA-d-> DIFERENCIACION_NUMERICA_E_INTEGRACION
 note on link
-  Listar Operaciones
+  Listar Módulos y Operaciones
 end note
 
 INTEGRAL_DOBLE_GAUSSIANA-D-> INTEGRAL_DOBLE_GAUSSIANA
@@ -327,7 +312,7 @@ end note
 
 INTEGRAL_TRIPLE_GAUSSIANA-d-> DIFERENCIACION_NUMERICA_E_INTEGRACION
 note on link
-  Listar Operaciones
+  Listar Módulos y Operaciones
 end note
 
 INTEGRAL_TRIPLE_GAUSSIANA-D-> INTEGRAL_TRIPLE_GAUSSIANA
