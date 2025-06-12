@@ -143,7 +143,7 @@ const Newton = () => {
 
             {/* p0 */}
             <div>
-              <label className="block mb-1 font-semibold">Valor inicial (p0):</label>
+              <label className="block mb-1 font-semibold">Punto inicial (p0):</label>
               <input
                 type="text"
                 value={p0}

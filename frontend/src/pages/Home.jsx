@@ -13,7 +13,7 @@ const Home = () => {
         { nombre: 'Posición Falsa', ruta: 'posicion-falsa' },
         { nombre: 'Steffensen', ruta: 'steffensen' },
         { nombre: 'Horner', ruta: 'horner' },
-        { nombre: 'Muller', ruta: 'muller' },
+        { nombre: 'Müller', ruta: 'muller' },
       ],
     },
     {

@@ -1,74 +1,65 @@
 import { useState } from 'react';
 import axios from 'axios';
 
-const Biseccion = () => {
+const Steffensen = () => {
   const [funcion, setFuncion] = useState('');
-  const [a, setA] = useState('');
-  const [b, setB] = useState('');
+  const [p0, setP0] = useState('');
   const [TOL, setTOL] = useState('');
   const [N0, setN0] = useState('');
   const [resultado, setResultado] = useState(null);
   const [error, setError] = useState(null);
   const [funcionError, setFuncionError] = useState('');
-  const [aError, setAError] = useState('');
-  const [bError, setBError] = useState('');
-  const [TOLerror, setTOLError] = useState('');
-  const [N0error, setN0Error] = useState('');
+  const [p0Error, setP0Error] = useState('');
+  const [TOLError, setTOLError] = useState('');
+  const [N0Error, setN0Error] = useState('');
 
   const handleSubmit = async (e) => {
-  e.preventDefault();
+    e.preventDefault();
 
-  setFuncionError('');
-  setAError('');
-  setBError('');
-  setTOLError('');
-  setN0Error('');
-  setError(null);
-  setResultado('calculando');
+    setFuncionError('');
+    setP0Error('');
+    setTOLError('');
+    setN0Error('');
+    setError(null);
+    setResultado('calculando');
 
-  if (!funcion.trim() || !a.trim() || !b.trim()) {
-    setError('Por favor, completa la función, el valor de a y el valor de b.');
-    setResultado(null);
-    return;
-  }
+    if (!funcion.trim() || !p0.trim()) {
+      setError('Por favor, completa la función y el valor inicial p0.');
+      setResultado(null);
+      return;
+    }
 
-  try {
-    const res = await axios.post('http://localhost:5000/ecuacion/biseccion', {
-      funcion,
-      a,
-      b,
-      ...(TOL && { TOL }),
-      ...(N0 && { N0 }),
-    });
-    setResultado(res.data);
-  } catch (err) {
-    console.error(err);
-    setError(err.response?.data?.error || 'Error desconocido');
-    setResultado(null);
-  }
-};
-
+    try {
+      const res = await axios.post('http://localhost:5000/ecuacion/steffensen', {
+        funcion,
+        p0,
+        ...(TOL && { TOL }),
+        ...(N0 && { N0 }),
+      });
+      setResultado(res.data);
+    } catch (err) {
+      console.error(err);
+      setError(err.response?.data?.error || 'Error desconocido');
+      setResultado(null);
+    }
+  };
 
   return (
     <div className="min-h-screen bg-gray-50 py-10 px-6">
         <div className="max-w-4xl mx-auto space-y-10">
             <h1 className="text-4xl font-bold text-center text-gray-800 mb-6">
-                Bisección
+                Steffensen
             </h1>
 
-            {/* Explicación */}
             <div className="text-gray-700 space-y-5 text-base">
                 <div className="space-y-3">
                     <p>
-                       El <strong>método de bisección</strong> es un método numérico para encontrar la raíz de una función continua de forma aproximada. Se basa en el teorema del valor 
-                       intermedio, el cual establece que si una función <code className="bg-gray-200 px-1 rounded">f(x)</code> es continua en un intervalo 
-                       <code className="bg-gray-200 px-1 rounded">[a, b]</code> y <code className="bg-gray-200 px-1 rounded">f(a)</code> y 
-                       <code className="bg-gray-200 px-1 rounded">f(b)</code> tienen signos opuestos, entonces existe al menos un punto 
-                       <code className="bg-gray-200 px-1 rounded">c</code> en <code className="bg-gray-200 px-1 rounded">[a, b]</code> tal que 
-                       <code className="bg-gray-200 px-1 rounded">f(c) = 0</code>.
+                        El <strong>método de Steffensen</strong> es un método para acelerar la convergencia de una iteración de punto fijo. Es decir, se utiliza para encontrar la solución 
+                        de <code className="bg-gray-200 px-1 rounded">p = g(p)</code> a partir de una aproximación inicial. La idea es aplicar el proceso de aceleración de 
+                        Aitken para obtener una mejor aproximación en cada iteración.
                     </p>
                     <p className="text-2xl font-bold">¿Cómo introducir la función y los parámetros?</p>
-
+            
                     <p>
                         Usa la variable <code className="bg-gray-200 px-1 rounded">x</code> para definir la función.                     
                         Puedes utilizar operaciones básicas como: 
@@ -123,10 +114,8 @@ const Biseccion = () => {
                 </p>
             </div>
 
-            {/* Formulario */}
             <form onSubmit={handleSubmit} className="bg-white p-8 rounded-lg shadow-md space-y-6">
                 <div className="space-y-4">
-                    {/* Función */}
                     <div>
                         <label className="block mb-1 font-semibold">Función:</label>
                         <input
@@ -141,59 +130,36 @@ const Biseccion = () => {
                                 setFuncion(value);
                             }
                             }}
-                            placeholder="Ej: x^2 - 2"
+                            placeholder="Ej: (x^2 + 2)/3"
                             className="w-full border border-gray-300 rounded-md p-2"
                             required
                         />
                         {funcionError && <p className="text-red-500 text-sm mt-1">{funcionError}</p>}
                     </div>
 
-                    {/* a y b */}
                     <div className="flex flex-col md:flex-row gap-4">
                         <div className="flex-1">
-                            <label className="block mb-1 font-semibold">a (extremo izquierdo):</label>
+                            <label className="block mb-1 font-semibold">Valor inicial (p0):</label>
                             <input
                             type="text"
-                            value={a}
+                            value={p0}
                             onChange={(e) => {
                                 const value = e.target.value;
                                 if (/[A-Z]/.test(value)) {
-                                setAError('No se permiten mayúsculas.');
+                                setP0Error('No se permiten mayúsculas.');
                                 } else {
-                                setAError('');
-                                setA(value);
+                                setP0Error('');
+                                setP0(value);
                                 }
                             }}
-                            placeholder="Ej: 0"
+                            placeholder="Ej: 1.5"
                             className="w-full border border-gray-300 rounded-md p-2"
                             required
                             />
-                            {aError && <p className="text-red-500 text-sm mt-1">{aError}</p>}
-                        </div>
-
-                        <div className="flex-1">
-                            <label className="block mb-1 font-semibold">b (extremo derecho):</label>
-                            <input
-                            type="text"
-                            value={b}
-                            onChange={(e) => {
-                                const value = e.target.value;
-                                if (/[A-Z]/.test(value)) {
-                                setBError('No se permiten mayúsculas.');
-                                } else {
-                                setBError('');
-                                setB(value);
-                                }
-                            }}
-                            placeholder="Ej: 2"
-                            className="w-full border border-gray-300 rounded-md p-2"
-                            required
-                            />
-                            {bError && <p className="text-red-500 text-sm mt-1">{bError}</p>}
+                            {p0Error && <p className="text-red-500 text-sm mt-1">{p0Error}</p>}
                         </div>
                     </div>
 
-                    {/* TOL y N0 */}
                     <div className="flex flex-col md:flex-row gap-4">
                         <div className="flex-1">
                             <label className="block mb-1 font-semibold">Tolerancia (opcional):</label>
@@ -212,7 +178,7 @@ const Biseccion = () => {
                             placeholder="Ej: 0.00001"
                             className="w-full border border-gray-300 rounded-md p-2"
                             />
-                            {TOLerror && <p className="text-red-500 text-sm mt-1">{TOLerror}</p>}
+                            {TOLError && <p className="text-red-500 text-sm mt-1">{TOLError}</p>}
                         </div>
 
                         <div className="flex-1">
@@ -232,7 +198,7 @@ const Biseccion = () => {
                             placeholder="Ej: 100"
                             className="w-full border border-gray-300 rounded-md p-2"
                             />
-                            {N0error && <p className="text-red-500 text-sm mt-1">{N0error}</p>}
+                            {N0Error && <p className="text-red-500 text-sm mt-1">{N0Error}</p>}
                         </div>
                     </div>
                 </div>
@@ -243,10 +209,8 @@ const Biseccion = () => {
                 >
                     Calcular
                 </button>
-
             </form>
 
-            {/* Resultado / Errores */}
             {resultado === 'calculando' && (
                 <div className="bg-blue-100 border border-blue-300 text-blue-700 p-4 rounded-lg text-center">
                     Calculando...
@@ -270,4 +234,4 @@ const Biseccion = () => {
   );
 };
 
-export default Biseccion;
+export default Steffensen;
