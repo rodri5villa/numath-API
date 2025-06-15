@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Footer from './components/Footer'; 
 import Navbar from './components/Navbar';
+import ScrollToTop from './components/ScrollToTop';
 import Home from './pages/Home';
 import Biseccion from './pages/ecuaciones_una_variable/Biseccion';
 import PuntoFijo from './pages/ecuaciones_una_variable/PuntoFijo';
@@ -10,10 +11,19 @@ import PosicionFalsa from './pages/ecuaciones_una_variable/PosicionFalsa';
 import Steffensen from './pages/ecuaciones_una_variable/Steffensen';
 import Horner from './pages/ecuaciones_una_variable/Horner';
 import Muller from './pages/ecuaciones_una_variable/Muller';
+import NewtonCotesN1Cerrado from './pages/diferenciacion_numerica_e_integracion/NewtonCotesN1Cerrado';
+import NewtonCotesN2Cerrado from './pages/diferenciacion_numerica_e_integracion/NewtonCotesN2Cerrado';
+import NewtonCotesN3Cerrado from './pages/diferenciacion_numerica_e_integracion/NewtonCotesN3Cerrado';
+import NewtonCotesN4Cerrado from './pages/diferenciacion_numerica_e_integracion/NewtonCotesN4Cerrado';
+import NewtonCotesN0Abierto from './pages/diferenciacion_numerica_e_integracion/NewtonCotesN0Abierto';
+import NewtonCotesN1Abierto from './pages/diferenciacion_numerica_e_integracion/NewtonCotesN1Abierto';
+import NewtonCotesN2Abierto from './pages/diferenciacion_numerica_e_integracion/NewtonCotesN2Abierto';
+import NewtonCotesN3Abierto from './pages/diferenciacion_numerica_e_integracion/NewtonCotesN3Abierto';
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div className="flex flex-col min-h-screen">
         <Navbar />
         <div className="flex-grow">
@@ -27,6 +37,14 @@ function App() {
             <Route path="/metodo/ecuaciones/steffensen" element={<Steffensen />} />
             <Route path="/metodo/ecuaciones/horner" element={<Horner />} />
             <Route path="/metodo/ecuaciones/muller" element={<Muller />} />
+            <Route path="/metodo/calculo/newton-cotes-n1-cerrado" element={<NewtonCotesN1Cerrado />} />
+            <Route path="/metodo/calculo/newton-cotes-n2-cerrado" element={<NewtonCotesN2Cerrado />} />
+            <Route path="/metodo/calculo/newton-cotes-n3-cerrado" element={<NewtonCotesN3Cerrado />} />
+            <Route path="/metodo/calculo/newton-cotes-n4-cerrado" element={<NewtonCotesN4Cerrado />} />
+            <Route path="/metodo/calculo/newton-cotes-n0-abierto" element={<NewtonCotesN0Abierto />} />
+            <Route path="/metodo/calculo/newton-cotes-n1-abierto" element={<NewtonCotesN1Abierto />} />
+            <Route path="/metodo/calculo/newton-cotes-n2-abierto" element={<NewtonCotesN2Abierto />} />
+            <Route path="/metodo/calculo/newton-cotes-n3-abierto" element={<NewtonCotesN3Abierto />} />
           </Routes>
         </div>
         <Footer />
