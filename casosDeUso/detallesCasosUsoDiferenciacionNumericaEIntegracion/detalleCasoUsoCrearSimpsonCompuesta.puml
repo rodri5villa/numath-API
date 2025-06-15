@@ -19,7 +19,7 @@ state SIMPSON_COMPUESTA
 
 SIMPSON_COMPUESTA-[#green]-> crear_simpson_compuesta
 note on link
-  **Usuario solicita:**
+  **Cliente solicita:**
   - Crear operación simpson compuesta
 end note
 
@@ -39,7 +39,7 @@ state crear_simpson_compuesta{
   end note
   2 -[#green]-> 3
   note on link
-    **Usuario Proporciona Parámetros:**
+    **Cliente Proporciona Parámetros:**
       - funcion
       - a
       - b

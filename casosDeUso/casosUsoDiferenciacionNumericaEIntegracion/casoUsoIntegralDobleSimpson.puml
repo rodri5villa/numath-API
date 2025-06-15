@@ -4,10 +4,10 @@ title Caso de Uso Integral Doble de Simpson
 
 left to right direction
 
-actor Usuario as user
+actor Cliente as user
 
 rectangle  {
-    usecase Crear Operación as crear
+    usecase "Crear Operación" as crear
 }
 
 user -- crear 

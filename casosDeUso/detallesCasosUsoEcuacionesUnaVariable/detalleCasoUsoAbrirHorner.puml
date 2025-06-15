@@ -16,7 +16,7 @@ title Detalle Caso de Uso Abrir Método Horner
 
 ECUACIONES_UNA_VARIABLE -[#green]-> abrir_horner
 note on link
-  **Usuario solicita:**
+  **Cliente solicita:**
   - Abrir Método Horner
 end note
 
@@ -33,7 +33,7 @@ state abrir_horner{
   end note
   2 -[#green]-> 3
   note on link
-    **Usuario Selecciona:**
+    **Cliente Selecciona:**
     - Método horner conocido
   end note
  

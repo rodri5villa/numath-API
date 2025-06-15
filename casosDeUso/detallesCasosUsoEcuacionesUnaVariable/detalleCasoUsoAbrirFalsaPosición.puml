@@ -16,7 +16,7 @@ title Detalle Caso de Uso Abrir Método Falsa Posición
 
 ECUACIONES_UNA_VARIABLE -[#green]-> abrir_falsa_posicion
 note on link
-  **Usuario solicita:**
+  **Cliente solicita:**
   - Abrir Método Falsa Posición
 end note
 
@@ -33,7 +33,7 @@ state abrir_falsa_posicion{
   end note
   2 -[#green]-> 3
   note on link
-    **Usuario Selecciona:**
+    **Cliente Selecciona:**
     - Método falsa posición conocido
   end note
  

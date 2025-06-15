@@ -19,7 +19,7 @@ state SECANTE
 
 SECANTE -[#green]-> crear_secante
 note on link
-  **Usuario solicita:**
+  **Cliente solicita:**
   - Crear operación secante
 end note
 
@@ -40,7 +40,7 @@ state crear_secante {
   end note
   2 -[#green]-> 3
   note on link
-    **Usuario Proporciona Parámetros:**
+    **Cliente Proporciona Parámetros:**
       - funcion
       - p0
       - p1

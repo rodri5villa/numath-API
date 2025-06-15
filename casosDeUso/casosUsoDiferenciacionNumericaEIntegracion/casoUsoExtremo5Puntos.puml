@@ -4,7 +4,7 @@ title Caso de Uso Extremo de 5 Puntos
 
 left to right direction
 
-actor Usuario as user
+actor Cliente as user
 
 rectangle  {
     usecase "Crear Operación" as crear

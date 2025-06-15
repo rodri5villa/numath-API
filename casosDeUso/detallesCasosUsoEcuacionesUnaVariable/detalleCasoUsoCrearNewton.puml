@@ -19,7 +19,7 @@ state NEWTON
 
 NEWTON -[#green]-> crear_newton 
 note on link
-  **Usuario solicita:**
+  **Cliente solicita:**
   - Crear operación newton
 end note
 
@@ -40,7 +40,7 @@ state crear_newton {
   end note
   2 -[#green]-> 3
   note on link
-    **Usuario Proporciona Parámetros:**
+    **Cliente Proporciona Parámetros:**
       - funcion
       - p0
       - TOL

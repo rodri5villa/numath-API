@@ -16,7 +16,7 @@ title Detalle Caso de Uso Abrir Regla Simpson Compuesta
 
 DIFERENCIACION_NUMERICA_E_INTEGRACION-[#green]-> abrir_simpson_compuesta
 note on link
-  **Usuario solicita:**
+  **Cliente solicita:**
   - Abrir Regla Simpson Compuesta
 end note
 
@@ -33,7 +33,7 @@ state abrir_simpson_compuesta{
   end note
   2 -[#green]-> 3
   note on link
-    **Usuario Selecciona:**
+    **Cliente Selecciona:**
     - Método simpson compuesto conocido
   end note
  

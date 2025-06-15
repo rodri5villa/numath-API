@@ -16,7 +16,7 @@ title Detalle Caso de Uso Abrir Integral Triple Gaussiana
 
 DIFERENCIACION_NUMERICA_E_INTEGRACION-[#green]-> abrir_integral_triple_gaussiana
 note on link
-  **Usuario solicita:**
+  **Cliente solicita:**
   - Abrir Integral Triple Gaussiana
 end note
 
@@ -33,7 +33,7 @@ state abrir_integral_triple_gaussiana{
   end note
   2 -[#green]-> 3
   note on link
-    **Usuario Selecciona:**
+    **Cliente Selecciona:**
     - Método integral triple gaussiana conocido
   end note
  

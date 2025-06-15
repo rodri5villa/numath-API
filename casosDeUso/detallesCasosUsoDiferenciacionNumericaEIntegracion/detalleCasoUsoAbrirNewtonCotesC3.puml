@@ -16,7 +16,7 @@ title Detalle Caso de Uso Abrir Newton Cotes Cerrado n=3
 
 DIFERENCIACION_NUMERICA_E_INTEGRACION-[#green]-> abrir_newton_cotes_c3
 note on link
-  **Usuario solicita:**
+  **Cliente solicita:**
   - Abrir Newton Cotes Cerrado n=3
 end note
 
@@ -33,7 +33,7 @@ state abrir_newton_cotes_c3{
   end note
   2 -[#green]-> 3
   note on link
-    **Usuario Selecciona:**
+    **Cliente Selecciona:**
     - Método newton cotes cerrado n=3 conocido
   end note
  

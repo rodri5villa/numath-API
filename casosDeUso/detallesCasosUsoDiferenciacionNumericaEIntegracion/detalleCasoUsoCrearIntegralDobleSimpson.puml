@@ -19,7 +19,7 @@ state INTEGRAL_DOBLE_SIMPSON
 
 INTEGRAL_DOBLE_SIMPSON-[#green]-> crear_integral_doble_simpson
 note on link
-  **Usuario solicita:**
+  **Cliente solicita:**
   - Crear operación integral doble simpson
 end note
 
@@ -42,7 +42,7 @@ state crear_integral_doble_simpson{
   end note
   2 -[#green]-> 3
   note on link
-    **Usuario Proporciona Parámetros:**
+    **Cliente Proporciona Parámetros:**
       - funcion
       - a
       - b

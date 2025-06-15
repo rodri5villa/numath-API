@@ -16,7 +16,7 @@ title Detalle Caso de Uso Abrir Extremo de 5 Puntos
 
 DIFERENCIACION_NUMERICA_E_INTEGRACION-[#green]-> abrir_extremo_5_puntos
 note on link
-  **Usuario solicita:**
+  **Cliente solicita:**
   - Abrir Extremo de 5 Puntos
 end note
 
@@ -33,7 +33,7 @@ state abrir_extremo_5_puntos{
   end note
   2 -[#green]-> 3
   note on link
-    **Usuario Selecciona:**
+    **Cliente Selecciona:**
     - Método extremo de 5 puntos conocido
   end note
  

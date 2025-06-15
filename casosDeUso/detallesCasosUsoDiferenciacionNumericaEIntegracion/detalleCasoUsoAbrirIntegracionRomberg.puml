@@ -16,7 +16,7 @@ title Detalle Caso de Uso Abrir Integración de Romberg
 
 DIFERENCIACION_NUMERICA_E_INTEGRACION-[#green]-> abrir_integracion_romberg
 note on link
-  **Usuario solicita:**
+  **Cliente solicita:**
   - Abrir Integración de Romberg
 end note
 
@@ -33,7 +33,7 @@ state abrir_integracion_romberg{
   end note
   2 -[#green]-> 3
   note on link
-    **Usuario Selecciona:**
+    **Cliente Selecciona:**
     - Método integración romberg conocido
   end note
  

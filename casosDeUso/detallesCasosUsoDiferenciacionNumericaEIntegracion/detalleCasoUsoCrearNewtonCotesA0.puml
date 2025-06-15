@@ -19,7 +19,7 @@ state NEWTON_COTES_A0
 
 NEWTON_COTES_A0-[#green]-> crear_newton_cotes_a0
 note on link
-  **Usuario solicita:**
+  **Cliente solicita:**
   - Crear operación newton cotes abierto n=0
 end note
 
@@ -38,7 +38,7 @@ state crear_newton_cotes_a0{
   end note
   2 -[#green]-> 3
   note on link
-    **Usuario Proporciona Parámetros:**
+    **Cliente Proporciona Parámetros:**
       - funcion
       - a
       - b

@@ -19,7 +19,7 @@ state NEWTON_COTES_A3
 
 NEWTON_COTES_A3-[#green]-> crear_newton_cotes_a3
 note on link
-  **Usuario solicita:**
+  **Cliente solicita:**
   - Crear operación newton cotes abierto n=3
 end note
 
@@ -38,7 +38,7 @@ state crear_newton_cotes_a3{
   end note
   2 -[#green]-> 3
   note on link
-    **Usuario Proporciona Parámetros:**
+    **Cliente Proporciona Parámetros:**
       - funcion
       - a
       - b

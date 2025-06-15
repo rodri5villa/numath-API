@@ -19,7 +19,7 @@ state MÜLLER
 
 MÜLLER -[#green]-> crear_müller
 note on link
-  **Usuario solicita:**
+  **Cliente solicita:**
   - Crear operación müller
 end note
 
@@ -41,7 +41,7 @@ state crear_müller {
   end note
   2 -[#green]-> 3
   note on link
-    **Usuario Proporciona Parámetros:**
+    **Cliente Proporciona Parámetros:**
       - funcion
       - p0
       - p1

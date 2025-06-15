@@ -16,7 +16,7 @@ title Detalle Caso de Uso Abrir Método Secante
 
 ECUACIONES_UNA_VARIABLE -[#green]-> abrir_secante
 note on link
-  **Usuario solicita:**
+  **Cliente solicita:**
   - Abrir Método Secante
 end note
 
@@ -33,7 +33,7 @@ state abrir_secante{
   end note
   2 -[#green]-> 3
   note on link
-    **Usuario Selecciona:**
+    **Cliente Selecciona:**
     - Método secante conocido
   end note
  

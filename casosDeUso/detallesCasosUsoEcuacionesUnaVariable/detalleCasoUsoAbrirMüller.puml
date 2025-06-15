@@ -16,7 +16,7 @@ title Detalle Caso de Uso Abrir Método Müller
 
 ECUACIONES_UNA_VARIABLE -[#green]-> abrir_müller
 note on link
-  **Usuario solicita:**
+  **Cliente solicita:**
   - Abrir Método Müller
 end note
 
@@ -33,7 +33,7 @@ state abrir_müller{
   end note
   2 -[#green]-> 3
   note on link
-    **Usuario Selecciona:**
+    **Cliente Selecciona:**
     - Método müller conocido
   end note
  

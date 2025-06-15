@@ -16,7 +16,7 @@ title Detalle Caso de Uso Abrir Newton Cotes Abierto n=0
 
 DIFERENCIACION_NUMERICA_E_INTEGRACION-[#green]-> abrir_newton_cotes_a0
 note on link
-  **Usuario solicita:**
+  **Cliente solicita:**
   - Abrir Newton Cotes Abierto n=0
 end note
 
@@ -33,7 +33,7 @@ state abrir_newton_cotes_a0{
   end note
   2 -[#green]-> 3
   note on link
-    **Usuario Selecciona:**
+    **Cliente Selecciona:**
     - Método newton cotes abierto n=0 conocido
   end note
  

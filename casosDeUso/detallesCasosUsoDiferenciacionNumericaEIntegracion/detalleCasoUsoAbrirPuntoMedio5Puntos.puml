@@ -16,7 +16,7 @@ title Detalle Caso de Uso Abrir Punto Medio de 5 Puntos
 
 DIFERENCIACION_NUMERICA_E_INTEGRACION-[#green]-> abrir_punto_medio_5_puntos
 note on link
-  **Usuario solicita:**
+  **Cliente solicita:**
   - Abrir Punto Medio de 5 Puntos
 end note
 
@@ -33,7 +33,7 @@ state abrir_punto_medio_5_puntos{
   end note
   2 -[#green]-> 3
   note on link
-    **Usuario Selecciona:**
+    **Cliente Selecciona:**
     - Método punto medio de 5 puntos conocido
   end note
  

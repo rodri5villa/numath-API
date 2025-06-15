@@ -16,7 +16,7 @@ title Detalle Caso de Uso Abrir Integral Doble de Simpson
 
 DIFERENCIACION_NUMERICA_E_INTEGRACION-[#green]-> abrir_integral_doble_simpson
 note on link
-  **Usuario solicita:**
+  **Cliente solicita:**
   - Abrir Integral Doble de Simpson
 end note
 
@@ -33,7 +33,7 @@ state abrir_integral_doble_simpson{
   end note
   2 -[#green]-> 3
   note on link
-    **Usuario Selecciona:**
+    **Cliente Selecciona:**
     - Método integral doble simpson conocido
   end note
  

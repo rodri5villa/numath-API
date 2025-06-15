@@ -19,7 +19,7 @@ state INTEGRAL_DOBLE_GAUSSIANA
 
 INTEGRAL_DOBLE_GAUSSIANA-[#green]-> crear_integral_doble_gaussiana
 note on link
-  **Usuario solicita:**
+  **Cliente solicita:**
   - Crear operación integral doble gaussiana
 end note
 
@@ -42,7 +42,7 @@ state crear_integral_doble_gaussiana{
   end note
   2 -[#green]-> 3
   note on link
-    **Usuario Proporciona Parámetros:**
+    **Cliente Proporciona Parámetros:**
       - funcion
       - a
       - b

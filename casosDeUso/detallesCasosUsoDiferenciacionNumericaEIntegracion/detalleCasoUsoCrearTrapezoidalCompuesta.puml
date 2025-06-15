@@ -19,7 +19,7 @@ state TRAPEZOIDAL_COMPUESTA
 
 TRAPEZOIDAL_COMPUESTA-[#green]-> crear_trapezoidal_compuesta
 note on link
-  **Usuario solicita:**
+  **Cliente solicita:**
   - Crear operación trapezoidal compuesta
 end note
 
@@ -39,7 +39,7 @@ state crear_trapezoidal_compuesta{
   end note
   2 -[#green]-> 3
   note on link
-    **Usuario Proporciona Parámetros:**
+    **Cliente Proporciona Parámetros:**
       - funcion
       - a
       - b

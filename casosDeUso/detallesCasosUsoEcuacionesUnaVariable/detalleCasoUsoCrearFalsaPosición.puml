@@ -19,7 +19,7 @@ state FALSA_POSICION
 
 FALSA_POSICION -[#green]-> crear_falsa_posicion
 note on link
-  **Usuario solicita:**
+  **Cliente solicita:**
   - Crear operación falsa posición
 end note
 
@@ -40,7 +40,7 @@ state crear_falsa_posicion {
   end note
   2 -[#green]-> 3
   note on link
-    **Usuario Proporciona Parámetros:**
+    **Cliente Proporciona Parámetros:**
       - funcion
       - p0
       - p1

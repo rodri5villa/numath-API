@@ -19,7 +19,7 @@ state HORNER
 
 HORNER -[#green]-> crear_horner
 note on link
-  **Usuario solicita:**
+  **Cliente solicita:**
   - Crear operación horner
 end note
 
@@ -37,7 +37,7 @@ state crear_horner {
   end note
   2 -[#green]-> 3
   note on link
-    **Usuario Proporciona Parámetros:**
+    **Cliente Proporciona Parámetros:**
       - a
       - x0
   end note

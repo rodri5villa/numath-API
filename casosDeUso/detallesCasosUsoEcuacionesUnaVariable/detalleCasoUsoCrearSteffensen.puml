@@ -19,7 +19,7 @@ state STEFFENSEN
 
 STEFFENSEN -[#green]-> crear_steffensen
 note on link
-  **Usuario solicita:**
+  **Cliente solicita:**
   - Crear operación steffensen
 end note
 
@@ -39,7 +39,7 @@ state crear_steffensen {
   end note
   2 -[#green]-> 3
   note on link
-    **Usuario Proporciona Parámetros:**
+    **Cliente Proporciona Parámetros:**
       - funcion
       - p0
       - TOL

@@ -19,7 +19,7 @@ state INTEGRACION_ROMBERG
 
 INTEGRACION_ROMBERG-[#green]-> crear_integracion_romberg
 note on link
-  **Usuario solicita:**
+  **Cliente solicita:**
   - Crear operación integracion romberg
 end note
 
@@ -39,7 +39,7 @@ state crear_integracion_romberg{
   end note
   2 -[#green]-> 3
   note on link
-    **Usuario Proporciona Parámetros:**
+    **Cliente Proporciona Parámetros:**
       - funcion
       - a
       - b

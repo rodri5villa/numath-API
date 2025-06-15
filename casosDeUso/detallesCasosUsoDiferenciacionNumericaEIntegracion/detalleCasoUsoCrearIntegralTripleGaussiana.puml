@@ -19,7 +19,7 @@ state INTEGRAL_TRIPLE_GAUSSIANA
 
 INTEGRAL_TRIPLE_GAUSSIANA-[#green]-> crear_integral_triple_gaussiana
 note on link
-  **Usuario solicita:**
+  **Cliente solicita:**
   - Crear operación integral triple gaussiana
 end note
 
@@ -45,7 +45,7 @@ state crear_integral_triple_gaussiana{
   end note
   2 -[#green]-> 3
   note on link
-    **Usuario Proporciona Parámetros:**
+    **Cliente Proporciona Parámetros:**
       - funcion
       - a
       - b

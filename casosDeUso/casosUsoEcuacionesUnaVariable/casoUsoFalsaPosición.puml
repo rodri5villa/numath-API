@@ -4,7 +4,7 @@ title Caso de Uso Falsa Posición
 
 left to right direction
 
-actor Usuario as user
+actor Cliente as user
 
 rectangle  {
     usecase "Crear Operación" as crear

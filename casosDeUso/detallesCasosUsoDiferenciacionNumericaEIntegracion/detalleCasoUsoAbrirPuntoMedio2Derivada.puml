@@ -16,7 +16,7 @@ title Detalle Caso de Uso Abrir Punto Medio 2º Derivada
 
 DIFERENCIACION_NUMERICA_E_INTEGRACION-[#green]-> abrir_punto_medio_2_derivada
 note on link
-  **Usuario solicita:**
+  **Cliente solicita:**
   - Abrir Punto Medio 2º Derivada
 end note
 
@@ -33,7 +33,7 @@ state abrir_punto_medio_2_derivada{
   end note
   2 -[#green]-> 3
   note on link
-    **Usuario Selecciona:**
+    **Cliente Selecciona:**
     - Método punto medio 2º derivada conocido
   end note
  

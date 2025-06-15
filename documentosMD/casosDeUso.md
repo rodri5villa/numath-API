@@ -442,7 +442,7 @@ Ofrece la opción de crear una operación de integral triple gaussiana.
 
 |                                                                        |                                                                          |
 | ---------------------------------------------------------------------- | ------------------------------------------------------------------------ |
-| ![](../imágenes/casosUso/detallesCasosUsoDiferenciacionNumericaEIntegracion/detalleCasoAbrirNewtonCotesC1.svg) | [Código PUML](../casosDeUso/detallesCasosUsoDiferenciacionNumericaEIntegracion/detalleCasoAbrirNewtonCotesC1.puml) |
+| ![](../imágenes/casosUso/detallesCasosUsoDiferenciacionNumericaEIntegracion/detalleCasoUsoAbrirNewtonCotesC1.svg) | [Código PUML](../casosDeUso/detallesCasosUsoDiferenciacionNumericaEIntegracion/detalleCasoUsoAbrirNewtonCotesC1.puml) |
 
 #### - Crear Operación Newton Cotes Cerrado n=1
 
@@ -454,7 +454,7 @@ Ofrece la opción de crear una operación de integral triple gaussiana.
 
 |                                                                        |                                                                          |
 | ---------------------------------------------------------------------- | ------------------------------------------------------------------------ |
-| ![](../imágenes/casosUso/detallesCasosUsoDiferenciacionNumericaEIntegracion/detalleCasoAbrirNewtonCotesC2.svg) | [Código PUML](../casosDeUso/detallesCasosUsoDiferenciacionNumericaEIntegracion/detalleCasoAbrirNewtonCotesC2.puml) |
+| ![](../imágenes/casosUso/detallesCasosUsoDiferenciacionNumericaEIntegracion/detalleCasoUsoAbrirNewtonCotesC2.svg) | [Código PUML](../casosDeUso/detallesCasosUsoDiferenciacionNumericaEIntegracion/detalleCasoUsoAbrirNewtonCotesC2.puml) |
 
 #### - Crear Operación Newton Cotes Cerrado n=2
 
@@ -466,7 +466,7 @@ Ofrece la opción de crear una operación de integral triple gaussiana.
 
 |                                                                        |                                                                          |
 | ---------------------------------------------------------------------- | ------------------------------------------------------------------------ |
-| ![](../imágenes/casosUso/detallesCasosUsoDiferenciacionNumericaEIntegracion/detalleCasoAbrirNewtonCotesC3.svg) | [Código PUML](../casosDeUso/detallesCasosUsoDiferenciacionNumericaEIntegracion/detalleCasoAbrirNewtonCotesC3.puml) |
+| ![](../imágenes/casosUso/detallesCasosUsoDiferenciacionNumericaEIntegracion/detalleCasoUsoAbrirNewtonCotesC3.svg) | [Código PUML](../casosDeUso/detallesCasosUsoDiferenciacionNumericaEIntegracion/detalleCasoUsoAbrirNewtonCotesC3.puml) |
 
 #### - Crear Operación Newton Cotes Cerrado n=3
 
@@ -478,7 +478,7 @@ Ofrece la opción de crear una operación de integral triple gaussiana.
 
 |                                                                        |                                                                          |
 | ---------------------------------------------------------------------- | ------------------------------------------------------------------------ |
-| ![](../imágenes/casosUso/detallesCasosUsoDiferenciacionNumericaEIntegracion/detalleCasoAbrirNewtonCotesC4.svg) | [Código PUML](../casosDeUso/detallesCasosUsoDiferenciacionNumericaEIntegracion/detalleCasoAbrirNewtonCotesC4.puml) |
+| ![](../imágenes/casosUso/detallesCasosUsoDiferenciacionNumericaEIntegracion/detalleCasoUsoAbrirNewtonCotesC4.svg) | [Código PUML](../casosDeUso/detallesCasosUsoDiferenciacionNumericaEIntegracion/detalleCasoUsoAbrirNewtonCotesC4.puml) |
 
 #### - Crear Operación Newton Cotes Cerrado n=4
 
@@ -490,7 +490,7 @@ Ofrece la opción de crear una operación de integral triple gaussiana.
 
 |                                                                        |                                                                          |
 | ---------------------------------------------------------------------- | ------------------------------------------------------------------------ |
-| ![](../imágenes/casosUso/detallesCasosUsoDiferenciacionNumericaEIntegracion/detalleCasoAbrirNewtonCotesA0.svg) | [Código PUML](../casosDeUso/detallesCasosUsoDiferenciacionNumericaEIntegracion/detalleCasoAbrirNewtonCotesA0.puml) |
+| ![](../imágenes/casosUso/detallesCasosUsoDiferenciacionNumericaEIntegracion/detalleCasoUsoAbrirNewtonCotesA0.svg) | [Código PUML](../casosDeUso/detallesCasosUsoDiferenciacionNumericaEIntegracion/detalleCasoUsoAbrirNewtonCotesA0.puml) |
 
 #### - Crear Operación Newton Cotes Abierto n=0
 
@@ -502,7 +502,7 @@ Ofrece la opción de crear una operación de integral triple gaussiana.
 
 |                                                                        |                                                                          |
 | ---------------------------------------------------------------------- | ------------------------------------------------------------------------ |
-| ![](../imágenes/casosUso/detallesCasosUsoDiferenciacionNumericaEIntegracion/detalleCasoAbrirNewtonCotesA1.svg) | [Código PUML](../casosDeUso/detallesCasosUsoDiferenciacionNumericaEIntegracion/detalleCasoAbrirNewtonCotesA1.puml) |
+| ![](../imágenes/casosUso/detallesCasosUsoDiferenciacionNumericaEIntegracion/detalleCasoUsoAbrirNewtonCotesA1.svg) | [Código PUML](../casosDeUso/detallesCasosUsoDiferenciacionNumericaEIntegracion/detalleCasoUsoAbrirNewtonCotesA1.puml) |
 
 #### - Crear Operación Newton Cotes Abierto n=1
 
@@ -514,7 +514,7 @@ Ofrece la opción de crear una operación de integral triple gaussiana.
 
 |                                                                        |                                                                          |
 | ---------------------------------------------------------------------- | ------------------------------------------------------------------------ |
-| ![](../imágenes/casosUso/detallesCasosUsoDiferenciacionNumericaEIntegracion/detalleCasoAbrirNewtonCotesA2.svg) | [Código PUML](../casosDeUso/detallesCasosUsoDiferenciacionNumericaEIntegracion/detalleCasoAbrirNewtonCotesA2.puml) |
+| ![](../imágenes/casosUso/detallesCasosUsoDiferenciacionNumericaEIntegracion/detalleCasoUsoAbrirNewtonCotesA2.svg) | [Código PUML](../casosDeUso/detallesCasosUsoDiferenciacionNumericaEIntegracion/detalleCasoUsoAbrirNewtonCotesA2.puml) |
 
 #### - Crear Operación Newton Cotes Abierto n=2
 
@@ -526,7 +526,7 @@ Ofrece la opción de crear una operación de integral triple gaussiana.
 
 |                                                                        |                                                                          |
 | ---------------------------------------------------------------------- | ------------------------------------------------------------------------ |
-| ![](../imágenes/casosUso/detallesCasosUsoDiferenciacionNumericaEIntegracion/detalleCasoAbrirNewtonCotesA3.svg) | [Código PUML](../casosDeUso/detallesCasosUsoDiferenciacionNumericaEIntegracion/detalleCasoAbrirNewtonCotesA3.puml) |
+| ![](../imágenes/casosUso/detallesCasosUsoDiferenciacionNumericaEIntegracion/detalleCasoUsoAbrirNewtonCotesA3.svg) | [Código PUML](../casosDeUso/detallesCasosUsoDiferenciacionNumericaEIntegracion/detalleCasoUsoAbrirNewtonCotesA3.puml) |
 
 #### - Crear Operación Newton Cotes Abierto n=3
 

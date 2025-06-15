@@ -19,7 +19,7 @@ state PUNTO_FIJO
 
 PUNTO_FIJO -[#green]-> crear_punto_fijo 
 note on link
-  **Usuario solicita:**
+  **Cliente solicita:**
   - Crear operación punto fijo
 end note
 
@@ -39,7 +39,7 @@ state crear_punto_fijo {
   end note
   2 -[#green]-> 3
   note on link
-    **Usuario Proporciona Parámetros:**
+    **Cliente Proporciona Parámetros:**
       - funcion
       - p0
       - TOL
