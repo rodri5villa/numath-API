@@ -18,7 +18,7 @@ package " " {
 node "Librería Numath" as PyLibrary {
 }
 
-flask_app -- operaciones: "Usuario solicita operación simpson compuesta >"
+flask_app -- operaciones: "Cliente solicita operación simpson compuesta >"
 operaciones -- PyLibrary : "LLama a >"
 operaciones -- flask_app : "Devuelve resultado >"
 

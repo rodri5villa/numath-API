@@ -18,7 +18,7 @@ package " " {
 node "Librería Numath" as PyLibrary {
 }
 
-flask_app -- operaciones: "Usuario solicita operación bisección >"
+flask_app -- operaciones: "Cliente solicita operación bisección >"
 operaciones -- PyLibrary : "LLama a >"
 operaciones -- flask_app : "Devuelve resultado >"
 

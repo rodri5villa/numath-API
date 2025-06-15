@@ -18,8 +18,8 @@ package " " {
 node "Librería Numath" as PyLibrary {
 }
 
-__init__ --> ecuaciones_una_variable_controller : "Usuario solicita una operación"
-__init__ --> diferenciacion_numerica_e_integracion_controller: "Usuario solicita una operación"
+__init__ --> ecuaciones_una_variable_controller : "Cliente solicita una operación"
+__init__ --> diferenciacion_numerica_e_integracion_controller: "Cliente solicita una operación"
 
 ecuaciones_una_variable_controller --> PyLibrary : "Llama a"
 diferenciacion_numerica_e_integracion_controller --> PyLibrary : "Llama a"
@@ -28,3 +28,4 @@ ecuaciones_una_variable_controller --> __init__ : "Devuelve resultado"
 diferenciacion_numerica_e_integracion_controller --> __init__ : "Devuelve resultado"
 
 @enduml
+
