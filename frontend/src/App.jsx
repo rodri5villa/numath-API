@@ -19,6 +19,7 @@ import NewtonCotesN0Abierto from './pages/diferenciacion_numerica_e_integracion/
 import NewtonCotesN1Abierto from './pages/diferenciacion_numerica_e_integracion/NewtonCotesN1Abierto';
 import NewtonCotesN2Abierto from './pages/diferenciacion_numerica_e_integracion/NewtonCotesN2Abierto';
 import NewtonCotesN3Abierto from './pages/diferenciacion_numerica_e_integracion/NewtonCotesN3Abierto';
+import SimpsonCompuesta from './pages/diferenciacion_numerica_e_integracion/SimpsonCompuesta';
 
 function App() {
   return (
@@ -45,6 +46,7 @@ function App() {
             <Route path="/metodo/calculo/newton-cotes-n1-abierto" element={<NewtonCotesN1Abierto />} />
             <Route path="/metodo/calculo/newton-cotes-n2-abierto" element={<NewtonCotesN2Abierto />} />
             <Route path="/metodo/calculo/newton-cotes-n3-abierto" element={<NewtonCotesN3Abierto />} />
+            <Route path="/metodo/calculo/regla-simpson-compuesta" element={<SimpsonCompuesta />} />
           </Routes>
         </div>
         <Footer />
