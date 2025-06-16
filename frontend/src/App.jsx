@@ -23,6 +23,9 @@ import SimpsonCompuesta from './pages/diferenciacion_numerica_e_integracion/Simp
 import TrapezoidalCompuesta from './pages/diferenciacion_numerica_e_integracion/TrapezoidalCompuesta';
 import PuntoMedioCompuesta from './pages/diferenciacion_numerica_e_integracion/PuntoMedioCompuesta';
 import IntegracionRomberg from './pages/diferenciacion_numerica_e_integracion/IntegracionRomberg';
+import IntegralDobleSimpson from './pages/diferenciacion_numerica_e_integracion/IntegralDobleSimpson';
+import IntegralDobleGaussiana from './pages/diferenciacion_numerica_e_integracion/IntegralDobleGaussiana';
+import IntegralTripleGaussiana from './pages/diferenciacion_numerica_e_integracion/IntegralTripleGaussiana';
 
 function App() {
   return (
@@ -53,6 +56,9 @@ function App() {
             <Route path="/metodo/calculo/regla-trapezoidal-compuesta" element={<TrapezoidalCompuesta />} />
             <Route path="/metodo/calculo/regla-punto-medio-compuesta" element={<PuntoMedioCompuesta />} />
             <Route path="/metodo/calculo/integracion-romberg" element={<IntegracionRomberg />} />
+            <Route path="/metodo/calculo/integral-doble-simpson" element={<IntegralDobleSimpson />} />
+            <Route path="/metodo/calculo/integral-doble-gaussiana" element={<IntegralDobleGaussiana />} />
+            <Route path="/metodo/calculo/integral-triple-gaussiana" element={<IntegralTripleGaussiana />} />
             
           </Routes>
         </div>
