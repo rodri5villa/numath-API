@@ -26,6 +26,7 @@ import IntegracionRomberg from './pages/diferenciacion_numerica_e_integracion/In
 import IntegralDobleSimpson from './pages/diferenciacion_numerica_e_integracion/IntegralDobleSimpson';
 import IntegralDobleGaussiana from './pages/diferenciacion_numerica_e_integracion/IntegralDobleGaussiana';
 import IntegralTripleGaussiana from './pages/diferenciacion_numerica_e_integracion/IntegralTripleGaussiana';
+import PuntoMedioTresPuntos from './pages/diferenciacion_numerica_e_integracion/PuntoMedioTresPuntos';
 
 function App() {
   return (
@@ -59,6 +60,7 @@ function App() {
             <Route path="/metodo/calculo/integral-doble-simpson" element={<IntegralDobleSimpson />} />
             <Route path="/metodo/calculo/integral-doble-gaussiana" element={<IntegralDobleGaussiana />} />
             <Route path="/metodo/calculo/integral-triple-gaussiana" element={<IntegralTripleGaussiana />} />
+            <Route path="/metodo/calculo/punto-medio-tres-puntos" element={<PuntoMedioTresPuntos />} />
             
           </Routes>
         </div>
