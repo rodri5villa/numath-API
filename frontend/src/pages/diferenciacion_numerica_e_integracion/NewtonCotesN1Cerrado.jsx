@@ -44,7 +44,7 @@ const NewtonCotesN1Cerrado = () => {
     <div className="min-h-screen bg-gray-50 py-10 px-6">
       <div className="max-w-4xl mx-auto space-y-10">
         <h1 className="text-4xl font-bold text-center text-gray-800 mb-6">
-          Newton-Cotes Cerrado N=1
+          Newton-Cotes Cerrado n = 1
         </h1>
 
         <div className="text-gray-700 space-y-5 text-base">

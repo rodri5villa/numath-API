@@ -27,6 +27,10 @@ import IntegralDobleSimpson from './pages/diferenciacion_numerica_e_integracion/
 import IntegralDobleGaussiana from './pages/diferenciacion_numerica_e_integracion/IntegralDobleGaussiana';
 import IntegralTripleGaussiana from './pages/diferenciacion_numerica_e_integracion/IntegralTripleGaussiana';
 import PuntoMedioTresPuntos from './pages/diferenciacion_numerica_e_integracion/PuntoMedioTresPuntos';
+import ExtremoTresPuntos from './pages/diferenciacion_numerica_e_integracion/ExtremoTresPuntos';
+import PuntoMedioCincoPuntos from './pages/diferenciacion_numerica_e_integracion/PuntoMedioCincoPuntos';
+import ExtremoCincoPuntos from './pages/diferenciacion_numerica_e_integracion/ExtremoCincoPuntos';
+import SegundaDerivada from './pages/diferenciacion_numerica_e_integracion/SegundaDerivada';
 
 function App() {
   return (
@@ -61,6 +65,10 @@ function App() {
             <Route path="/metodo/calculo/integral-doble-gaussiana" element={<IntegralDobleGaussiana />} />
             <Route path="/metodo/calculo/integral-triple-gaussiana" element={<IntegralTripleGaussiana />} />
             <Route path="/metodo/calculo/punto-medio-tres-puntos" element={<PuntoMedioTresPuntos />} />
+            <Route path="/metodo/calculo/extremo-tres-puntos" element={<ExtremoTresPuntos />} />
+            <Route path="/metodo/calculo/punto-medio-cinco-puntos" element={<PuntoMedioCincoPuntos />} />
+            <Route path="/metodo/calculo/extremo-cinco-puntos" element={<ExtremoCincoPuntos />} />
+            <Route path="/metodo/calculo/segunda-derivada" element={<SegundaDerivada />} />
             
           </Routes>
         </div>

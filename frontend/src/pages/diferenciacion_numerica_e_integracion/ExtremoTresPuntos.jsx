@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import axios from 'axios';
 
-const PuntoMedioTresPuntos = () => {
+const ExtremoTresPuntos = () => {
   const [modo, setModo] = useState('funcion');
   const [funcion, setFuncion] = useState('');
   const [x0Funcion, setX0Funcion] = useState('');
@@ -32,11 +32,10 @@ const PuntoMedioTresPuntos = () => {
         }
     }
 
-
     try {
       let res;
       if (modo === 'funcion') {
-        res = await axios.post('http://localhost:5000/calculo/punto_medio_tres_puntos', {
+        res = await axios.post('http://localhost:5000/calculo/extremo_tres_puntos', {
             funcion,
             x0: x0Funcion,
             h,
@@ -75,15 +74,15 @@ const PuntoMedioTresPuntos = () => {
     <div className="min-h-screen bg-gray-50 py-10 px-6">
         <div className="max-w-4xl mx-auto space-y-10">
             <h1 className="text-4xl font-bold text-center text-gray-800 mb-6">
-                Punto Medio de 3 Puntos
+                Extremo de 3 Puntos
             </h1>
 
             {/* Explicación */}
             <div className="text-gray-700 space-y-5 text-base">
                 <div className="space-y-3">
                     <p>
-                       El <strong>método del punto medio de 3 puntos</strong> calcula la derivada de una función en el punto <code className="bg-gray-200 px-1 rounded">x0</code> 
-                       mediante la fórmula del punto medio de tres puntos, ya sea a través de su función o de los puntos obtenidos. 
+                       El <strong>método de extremo de 3 puntos</strong> calcula la derivada de una función en un punto extremo, 
+                       utilizando la fórmula del extremo de tres puntos, ya sea a través de su función o de los puntos obtenidos.
                     </p>
                     <p className="text-2xl font-bold">¿Cómo introducir la función y los parámetros?</p>
 
@@ -190,7 +189,7 @@ const PuntoMedioTresPuntos = () => {
                     className="w-full border border-gray-300 rounded-md p-2"
                     required
                   />
-                  {errores.x0 && <p className="text-red-500 text-sm mt-1">{errores.x0}</p>}
+                  {errores.x0Funcion && <p className="text-red-500 text-sm mt-1">{errores.x0Funcion}</p>}
                 </div>
                 <div className="flex-1">
                   <label className="block mb-1 font-semibold">h (paso):</label>
@@ -231,7 +230,7 @@ const PuntoMedioTresPuntos = () => {
                   className="w-full border border-gray-300 rounded-md p-2"
                   required
                 />
-                {errores.x0 && <p className="text-red-500 text-sm mt-1">{errores.x0}</p>}
+                {errores.x0Puntos && <p className="text-red-500 text-sm mt-1">{errores.x0Puntos}</p>}
               </div>
             </>
           )}
@@ -267,4 +266,4 @@ const PuntoMedioTresPuntos = () => {
   );
 };
 
-export default PuntoMedioTresPuntos;
+export default ExtremoTresPuntos;

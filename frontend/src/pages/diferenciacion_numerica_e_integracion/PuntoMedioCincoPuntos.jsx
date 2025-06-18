@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import axios from 'axios';
 
-const PuntoMedioTresPuntos = () => {
+const PuntoMedioCincoPuntos = () => {
   const [modo, setModo] = useState('funcion');
   const [funcion, setFuncion] = useState('');
   const [x0Funcion, setX0Funcion] = useState('');
@@ -19,39 +19,38 @@ const PuntoMedioTresPuntos = () => {
     setErrores({});
 
     if (modo === 'funcion') {
-        if (!funcion || !x0Funcion || !h) {
-            setError('Por favor, completa todos los campos.');
-            setResultado(null);
-            return;
-        }
+      if (!funcion || !x0Funcion || !h) {
+        setError('Por favor, completa todos los campos.');
+        setResultado(null);
+        return;
+      }
     } else {
-        if (!datosTexto || !x0Puntos) {
-            setError('Por favor, completa todos los campos.');
-            setResultado(null);
-            return;
-        }
+      if (!datosTexto || !x0Puntos) {
+        setError('Por favor, completa todos los campos.');
+        setResultado(null);
+        return;
+      }
     }
-
 
     try {
       let res;
       if (modo === 'funcion') {
-        res = await axios.post('http://localhost:5000/calculo/punto_medio_tres_puntos', {
-            funcion,
-            x0: x0Funcion,
-            h,
+        res = await axios.post('http://localhost:5000/calculo/punto_medio_cinco_puntos', {
+          funcion,
+          x0: x0Funcion,
+          h,
         });
       } else {
-            const pares = datosTexto.split(',');
-            const datos = {};
-            pares.forEach((par) => {
-                const [clave, valor] = par.split(':');
-                if (clave && valor) datos[clave.trim()] = valor.trim();
-            });
-            res = await axios.post('http://localhost:5000/calculo/derivada_por_puntos', {
-                datos,
-                x0: x0Puntos,
-            });
+        const pares = datosTexto.split(',');
+        const datos = {};
+        pares.forEach((par) => {
+          const [clave, valor] = par.split(':');
+          if (clave && valor) datos[clave.trim()] = valor.trim();
+        });
+        res = await axios.post('http://localhost:5000/calculo/derivada_por_puntos', {
+          datos,
+          x0: x0Puntos,
+        });
       }
       setResultado(res.data);
     } catch (err) {
@@ -75,15 +74,15 @@ const PuntoMedioTresPuntos = () => {
     <div className="min-h-screen bg-gray-50 py-10 px-6">
         <div className="max-w-4xl mx-auto space-y-10">
             <h1 className="text-4xl font-bold text-center text-gray-800 mb-6">
-                Punto Medio de 3 Puntos
+                Punto Medio de 5 Puntos
             </h1>
 
             {/* Explicación */}
             <div className="text-gray-700 space-y-5 text-base">
                 <div className="space-y-3">
                     <p>
-                       El <strong>método del punto medio de 3 puntos</strong> calcula la derivada de una función en el punto <code className="bg-gray-200 px-1 rounded">x0</code> 
-                       mediante la fórmula del punto medio de tres puntos, ya sea a través de su función o de los puntos obtenidos. 
+                       El <strong>método del punto medio de 5 puntos</strong>  calcula la derivada de una función en el punto <code className="bg-gray-200 px-1 rounded">x0</code> 
+                       utilizando la fórmula del punto medio de cinco puntos, ya sea a través de su función o de los puntos obtenidos.
                     </p>
                     <p className="text-2xl font-bold">¿Cómo introducir la función y los parámetros?</p>
 
@@ -190,7 +189,7 @@ const PuntoMedioTresPuntos = () => {
                     className="w-full border border-gray-300 rounded-md p-2"
                     required
                   />
-                  {errores.x0 && <p className="text-red-500 text-sm mt-1">{errores.x0}</p>}
+                  {errores.x0Funcion && <p className="text-red-500 text-sm mt-1">{errores.x0Funcion}</p>}
                 </div>
                 <div className="flex-1">
                   <label className="block mb-1 font-semibold">h (paso):</label>
@@ -231,7 +230,7 @@ const PuntoMedioTresPuntos = () => {
                   className="w-full border border-gray-300 rounded-md p-2"
                   required
                 />
-                {errores.x0 && <p className="text-red-500 text-sm mt-1">{errores.x0}</p>}
+                {errores.x0Puntos && <p className="text-red-500 text-sm mt-1">{errores.x0Puntos}</p>}
               </div>
             </>
           )}
@@ -267,4 +266,4 @@ const PuntoMedioTresPuntos = () => {
   );
 };
 
-export default PuntoMedioTresPuntos;
+export default PuntoMedioCincoPuntos;
